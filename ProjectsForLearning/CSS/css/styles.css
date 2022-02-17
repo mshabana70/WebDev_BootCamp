@@ -2,6 +2,26 @@ body {
   margin: 0px 0px;
   text-align: center;
   font-family: "Merriweather", serif;
+  /* font-size: 2em; */
+  /* This would be inherited and multiplied by other font-size rules that
+  chilren of this parent element (which is every element inside the body element)*/
+}
+
+h1 {
+  /* It is best practice to make our fonts dynamic */
+  /* font-size: 100%; 100% = 16px = 1em */
+  /* font-size: 562.5%; 90px/16px = 5.625 => 562.5% */
+  font-size: 5.625em; /* Another way to create dynamic fonts */
+  margin-top: 0;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .top-container {
@@ -20,7 +40,7 @@ body {
   color: #14ffec;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: "Bad Script", cursive;
+  /* font-family: "Bad Script", cursive; */
 }
 
 .sub {
