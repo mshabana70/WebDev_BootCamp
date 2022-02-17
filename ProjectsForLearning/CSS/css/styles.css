@@ -2,7 +2,7 @@ body {
   margin: 0px 0px;
   text-align: center;
   font-family: "Merriweather", serif;
-  /* font-size: 2em; */
+  font-size: 1em;
   /* This would be inherited and multiplied by other font-size rules that
   chilren of this parent element (which is every element inside the body element)*/
 }
@@ -11,17 +11,31 @@ h1 {
   /* It is best practice to make our fonts dynamic */
   /* font-size: 100%; 100% = 16px = 1em */
   /* font-size: 562.5%; 90px/16px = 5.625 => 562.5% */
-  font-size: 5.625em; /* Another way to create dynamic fonts */
-  margin-top: 0;
+  /* 'rem' references the ROOT element for the dynamic sizing */
+  /* This means if the parent element is set to a dynamic font size */
+  /* the child element that implements 'rem' will ignore that parent rule */
+  /* the child element that implements 'rem' will ignore that parent rule */
+  font-size: 5.625rem; /* Another way to create dynamic fonts */
+  line-height: 2;
+  color: #66bfbf;
+  margin: 50px auto 0 auto;
   font-family: "Sacramento", cursive;
 }
 
 h2 {
+  color: #66bfbf;
+  font-size: 2.5rem;
+  font-weight: normal;
   font-family: "Montserrat", sans-serif;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
+}
+
+h3,
+a {
+  color: #11999e;
 }
 
 .top-container {
@@ -34,18 +48,6 @@ h3 {
 }
 
 .bottom-container {
-}
-
-.header {
-  color: #14ffec;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  /* font-family: "Bad Script", cursive; */
-}
-
-.sub {
-  color: #0d7377;
-  font-family: "Montserrat", sans-serif;
 }
 
 .pro {
