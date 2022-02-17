@@ -1,0 +1,18 @@
+body {
+  background-color: #a3ddcb;
+}
+
+hr {
+  background-color: clear;
+  border-style: none;
+  border-top: 3px double #8c8b8b;
+}
+
+img {
+  height: 200px;
+}
+
+h1,
+h3 {
+  color: #654062;
+}
