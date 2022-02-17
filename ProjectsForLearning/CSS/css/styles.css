@@ -16,7 +16,7 @@ h1 {
   /* the child element that implements 'rem' will ignore that parent rule */
   /* the child element that implements 'rem' will ignore that parent rule */
   font-size: 5.625rem; /* Another way to create dynamic fonts */
-  line-height: 2;
+  line-height: 2; /* gives a more spaced out look */
   color: #66bfbf;
   margin: 50px auto 0 auto;
   font-family: "Sacramento", cursive;
