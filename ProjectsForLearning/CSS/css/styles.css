@@ -61,9 +61,13 @@ a {
 }
 
 .middle-container {
+  margin: 50px 0;
 }
 
 .bottom-container {
+  background-color: #66bfbf;
+  position: relative;
+  bottom: 0;
 }
 
 /* Profile section styling */
@@ -88,6 +92,9 @@ a {
 
 hr {
   margin-top: 50px;
+  border: transparent;
+  border-top: 5px dotted #eaf6f6;
+  width: 5%;
 }
 
 /* Skills section styling */
@@ -96,7 +103,6 @@ hr {
   /* set skill row width to 50% */
   width: 50%;
   margin: 100px auto; /* center with left/right at auto */
-
   text-align: left;
   line-height: 2;
 }
@@ -107,6 +113,9 @@ hr {
   line-height: 2;
 } */
 
+/* float example */
+/* best practice to use floats only for wrapping text */
+/* definitely more comfortable using flex or grids */
 .skill-pic-1 {
   width: 30%;
   float: left;
@@ -119,6 +128,32 @@ hr {
   margin-left: 30px;
 }
 
+/* Used for the p element for our float example */
+/* But we like how it looks without it so :)*/
+.code-skill-description {
+  clear: left; /* Similar to the anti-float */
+  /* removes wrapping of text from the left side */
+  /* This pushes the text to the bottom of the div instead */
+}
+
+.swim-skill-description {
+  clear: right;
+}
+
+/**/
+
+/* Footer styling */
+.bottom-container a {
+  display: inline-block;
+  padding: 30px 10px 0 10px;
+}
+
+.bottom-container p {
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+/* Media Queries */
 @media (max-width: 800px) {
   .profile {
     flex-direction: column;
