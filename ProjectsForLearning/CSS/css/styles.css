@@ -38,18 +38,6 @@ a {
   color: #11999e;
 }
 
-.top-container {
-  background-color: #323232;
-  position: relative;
-  padding-top: 100px;
-}
-
-.middle-container {
-}
-
-.bottom-container {
-}
-
 .pro {
   text-decoration: underline;
 }
@@ -65,3 +53,17 @@ a {
   left: 300px;
   bottom: 300px;
 }
+
+.top-container {
+  background-color: #323232;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+}
+
+.bottom-container {
+}
+
+/* Skills section styling */
