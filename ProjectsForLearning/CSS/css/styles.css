@@ -178,6 +178,10 @@ hr {
   text-decoration: none;
 }
 
+.bottom-container a:hover {
+  color: #eaf6f6;
+}
+
 .bottom-container p {
   margin-bottom: 0;
   padding: 20px 0;
