@@ -1,4 +1,5 @@
 body {
+  color: #40514e;
   margin: 0px 0px;
   text-align: center;
   font-family: "Merriweather", serif;
@@ -38,6 +39,10 @@ a {
   color: #11999e;
 }
 
+p {
+  line-height: 2;
+}
+
 .pro {
   text-decoration: underline;
 }
@@ -45,17 +50,17 @@ a {
 .top-cloud {
   position: absolute;
   right: 300px;
-  top: 50px;
+  top: 30px;
 }
 
 .bottom-cloud {
   position: absolute;
-  left: 300px;
+  left: 150px;
   bottom: 300px;
 }
 
 .top-container {
-  background-color: #323232;
+  background-color: #eaf6f6;
   position: relative;
   padding-top: 100px;
 }
@@ -159,6 +164,7 @@ hr {
   padding: 10px 20px;
   border-radius: 8px;
   font-family: "Monteserrat", sans-serif;
+  font-size: 20px;
 }
 
 .btn:hover {
