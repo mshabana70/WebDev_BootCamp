@@ -140,17 +140,43 @@ hr {
   clear: right;
 }
 
-/**/
+/* Contact me section styling */
+
+.contact-me {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-me p {
+  padding: 20px 0 50px 0;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Monteserrat", sans-serif;
+}
+
+.btn:hover {
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+}
 
 /* Footer styling */
 .bottom-container a {
   display: inline-block;
-  padding: 30px 10px 0 10px;
+  padding: 30px 20px 0 10px;
+  text-decoration: none;
 }
 
 .bottom-container p {
   margin-bottom: 0;
   padding: 20px 0;
+  font-size: 0.8rem;
+  color: #eaf6f6;
 }
 
 /* Media Queries */
