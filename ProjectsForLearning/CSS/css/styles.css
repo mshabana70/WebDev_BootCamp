@@ -66,4 +66,67 @@ a {
 .bottom-container {
 }
 
+/* Profile section styling */
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  max-width: 50%;
+  margin: 10px 10px;
+  border-radius: 50%;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 2;
+}
+
+hr {
+  margin-top: 50px;
+}
+
 /* Skills section styling */
+
+.skill-row {
+  /* set skill row width to 50% */
+  width: 50%;
+  margin: 100px auto; /* center with left/right at auto */
+
+  text-align: left;
+  line-height: 2;
+}
+
+/* .skill-row h3,
+.skill-row p {
+  text-align: left;
+  line-height: 2;
+} */
+
+.skill-pic-1 {
+  width: 30%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-pic-2 {
+  width: 30%;
+  float: right;
+  margin-left: 30px;
+}
+
+@media (max-width: 800px) {
+  .profile {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .profile-text {
+    text-align: center;
+    padding: 0 30px;
+  }
+}
