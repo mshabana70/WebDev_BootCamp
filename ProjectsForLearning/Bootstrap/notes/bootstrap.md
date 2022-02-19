@@ -13,7 +13,6 @@ Here are some things you can use the bootstrap library for:
 - Pre-Styled Elements:
   - [Codeply](https://www.codeply.com/) is similar to codepen but allows you to used these front-end libraries to create frontend styles and projects.
 
-
 ### How to use Boostrap
 
 First in order to use the bootstrap library, you must import the bootstrap library into your code. You can reference the [bootstrap docs](https://getbootstrap.com/docs/5.1/getting-started/introduction/).
@@ -23,7 +22,8 @@ First in order to use the bootstrap library, you must import the bootstrap libra
 ```
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 ```
-- For full styling and functionality, import the jquery, Popper.js and custom boostrap javascript bundles 
+
+- For full styling and functionality, import the jquery, Popper.js and custom boostrap javascript bundles
 
 ```
 <!-- Optional JavaScript -->
@@ -33,4 +33,8 @@ First in order to use the bootstrap library, you must import the bootstrap libra
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 ```
 
-After that you can use predefined class
+After that you can use predefined class name to apply styling to your html elements.
+
+### Bootstrap Examples
+
+One neat thing about bootstrap library is that there are premade template designs that you can download and reference in your own web designs. Check out these bootstrap examples [here](https://getbootstrap.com/docs/5.1/examples/).
