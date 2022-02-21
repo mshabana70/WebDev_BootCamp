@@ -95,6 +95,6 @@ Before you actually start coding your website design, it is important to create 
 
 - Start off by looking at other peoples websites for inspiration and guidance [here](https://www.awwwards.com/)
 - Also look at potential [UI Patterns](https://ui-patterns.com/) that fit your web application use cases for certain functionalities.
-- Create a simple sketched up Wireframe for your web application.
+- Create a simple sketched up Wireframe for your web application. You can use [Figma](https://figma.com/)
 - Create a detailed mock-up, which is a photograph/screenshot of your web application design but a detailed one.
 - A great place to find inspiration for all of these phases of design can be found on [dribbble](https://dribbble.com/) where designers put portfolios up of their work.
