@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Space Cadets</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     
@@ -11,7 +12,40 @@
     <section id="title">
 
         <!-- Nav Bar -->
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Space Cadet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo"
+                aria-control="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Products</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Sources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Articles</a></li>
+                            <li><a class="dropdown-item" href="#">Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- Title Section -->
         <div class="title-text">
@@ -44,6 +78,68 @@
             <h2>Easy to use</h2>
             <p>Easy access for young travelers to reach the stars with ease</p>
         </div>
+    </section>
+
+    <!-- Press Section -->
+    <section id="press">
+        <img src="./img/" alt="Press Image One">
+        <img src="./img/" alt="Press Image Two">
+        <img src="./img/" alt="Press Image Three">
+        <img src="./img/" alt="Press Image Four">
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="testimonial-item">
+            <div class="testimonial-imgs">
+                <img src="./img/" alt="Testimonial Profile image">
+                <!-- Stars for ratings here -->
+            </div>
+            <div class="testimonial-text">
+                <h2>John Doe</h2>
+                <h3 class="testimonial-text-org">NASA Astronaut</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, cupiditate!</p>
+            </div>
+
+            <!-- <div class="testimonial-text">
+                <h2>Jane Doe</h2>
+                <h3 class="testimonial-text-org">SpaceX Astronaut</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, cupiditate!</p>
+            </div> -->
+
+            <!-- <div class="testimonial-text">
+                <h2>Hugh Janus</h2>
+                <h3 class="testimonial-text-org">Canadian Astronaut</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, cupiditate!</p>
+            </div> -->
+
+            <!-- <div class="testimonial-text">
+                <h2>Ricky Bobby</h2>
+                <h3 class="testimonial-text-org">Common Traveler</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, cupiditate!</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="more-info">
+        <div class="project">
+            <h2>Check out the project!</h2>
+            <a href="#" class="info-button">Our Project</a>
+        </div>
+        <div class="project">
+            <h2>Contact Us Here!</h2>
+            <a href="#" class="info-button">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+        <a href="#">Github Fonticon</a>
+        <a href="#">LinkedIn Fonticon</a>
+        <a href="#">Twitter Fonticon</a>
+        <a href="#"></a>
+        <p>Copyright &copy; Mahmoud Shabana 2022</p>
     </section>
 </body>
 </html>
