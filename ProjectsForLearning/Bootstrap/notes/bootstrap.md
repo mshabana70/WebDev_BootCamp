@@ -98,3 +98,15 @@ Before you actually start coding your website design, it is important to create 
 - Create a simple sketched up Wireframe for your web application. You can use [Figma](https://figma.com/)
 - Create a detailed mock-up, which is a photograph/screenshot of your web application design but a detailed one.
 - A great place to find inspiration for all of these phases of design can be found on [dribbble](https://dribbble.com/) where designers put portfolios up of their work.
+
+## Styling with Bootstrap:
+
+### Navbar Styling:
+
+Although the tutorial video was cut off short, you can look over the documentation for boostrap navbars [here](https://getbootstrap.com/docs/5.1/components/navbar/).
+
+There is also sources online explaining different ways to style with Bootstrap navbar components [here](https://www.youtube.com/results?search_query=bootstrap+navbar)
+
+### Grid Layouts:
+
+
