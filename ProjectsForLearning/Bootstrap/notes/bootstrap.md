@@ -99,6 +99,8 @@ Before you actually start coding your website design, it is important to create 
 - Create a detailed mock-up, which is a photograph/screenshot of your web application design but a detailed one.
 - A great place to find inspiration for all of these phases of design can be found on [dribbble](https://dribbble.com/) where designers put portfolios up of their work.
 
+<hr style="border: 5px dashed blue">
+
 ## Styling with Bootstrap:
 
 ### Navbar Styling:
@@ -107,6 +109,35 @@ Although the tutorial video was cut off short, you can look over the documentati
 
 There is also sources online explaining different ways to style with Bootstrap navbar components [here](https://www.youtube.com/results?search_query=bootstrap+navbar)
 
-### Grid Layouts:
+### [Grid Layouts:](https://getbootstrap.com/docs/5.1/layout/grid/)
 
+When working with Bootstrap, the framework makes it easy to layout web page elements in a responsive manner. This is done using the Grid Layout rules in CSS. Bootstrap has built in rules for grid layouts when using class names like <code>row</code> or <code>col</code> when creating multiple <code>div</code> elements in your page structure.
 
+```
+<div class="row">
+    <div class="col" style="background: red; border: 1px solid blue">
+        Column 1
+    </div>
+    <div class="col" style="background: red; border: 1px solid blue">
+        Column 2
+    </div>
+</div>
+```
+
+As you can see by the example above, using the <code>row</code> class will generate a <code>grid-row-template</code> property for our html elements. From there, we create columns in our grid using the <code>col</code> class name, that are equally sized and resize to the shape of the webpage. Since we have two divs with class <code>col</code>, each column will take up 50% of the screen with. Three column elements will take up 33% of the screen width, and so on.
+<br>
+
+Now say you want to size a single column to a fixed percentage of the screen. Say you want to make a column that is 50% of the screen width. Rather than use the approach above and make one column transparent, you can use the <code>col-#</code> class name.
+<br>
+
+In bootstrap, there are 12 columns that make up the width of the screen. The number that you associate with your <code>col-#</code> class name is the fraction of the 12 total columns that the specified html element will take up. The example below uses <code>col-6</code> class name to create a column that is 50% of the screen width:
+
+```
+<div class="row">
+    <div class="col-6" style="background: green; border: 1px solid yellow;">
+        Column 1.1
+    </div>
+</div>
+```
+
+<blockquote>For more info on columns, visit <a href="https://getbootstrap.com/docs/5.1/layout/columns/">this page</a></blockquote>
