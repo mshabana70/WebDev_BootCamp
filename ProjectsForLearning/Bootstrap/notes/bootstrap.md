@@ -39,7 +39,6 @@ After that you can use predefined class name to apply styling to your html eleme
 
 One neat thing about bootstrap library is that there are premade template designs that you can download and reference in your own web designs. Check out these bootstrap examples [here](https://getbootstrap.com/docs/5.1/examples/).
 
-
 ### Bootstrap Installation
 
 There are three ways to install the bootstrap library for your websites:
@@ -80,11 +79,22 @@ There are three ways to install the bootstrap library for your websites:
     -->
 </body>
 
-</html> 
+</html>
 
 ```
+
 3. You can also download the bootstrap version to your local machine to reference the css files needed locally.
-    - This will not accord for any sort of caching that a user will have because the styling file is a completely seperate file.
-    - Browsers will not recognize the downloaded stylesheets and will not know if they are already downloaded and cached
-    - This means all the stylesheets in the bootstrap download bundle will have to be redownloaded everytime the website loads up.
-    - This could possibly lead to increased latency
+   - This will not accord for any sort of caching that a user will have because the styling file is a completely seperate file.
+   - Browsers will not recognize the downloaded stylesheets and will not know if they are already downloaded and cached
+   - This means all the stylesheets in the bootstrap download bundle will have to be redownloaded everytime the website loads up.
+   - This could possibly lead to increased latency
+
+### Before Bootstrap, we must Wireframe/Mock Up
+
+Before you actually start coding your website design, it is important to create a sketch of what you want your website design to look like. The reason that this is important is because of the potential cost that a misplaced design or a redesign can have on the development of the user interface. It is best practice to follow this workflow below:
+
+- Start off by looking at other peoples websites for inspiration and guidance [here](https://www.awwwards.com/)
+- Also look at potential [UI Patterns](https://ui-patterns.com/) that fit your web application use cases for certain functionalities.
+- Create a simple sketched up Wireframe for your web application.
+- Create a detailed mock-up, which is a photograph/screenshot of your web application design but a detailed one.
+- A great place to find inspiration for all of these phases of design can be found on [dribbble](https://dribbble.com/) where designers put portfolios up of their work.
