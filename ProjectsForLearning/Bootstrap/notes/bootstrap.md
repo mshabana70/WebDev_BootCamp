@@ -148,6 +148,7 @@ In bootstrap, there are 12 columns that make up the width of the screen. The num
     </div>
 </div>
 ```
+
 <blockquote>For more info on columns, visit <a href="https://getbootstrap.com/docs/5.1/layout/columns/">this page</a></blockquote>
 <br>
 
@@ -167,8 +168,50 @@ When working on a responsive web interface, Bootstrap has class names to account
 </div>
 ```
 
-Now, if we were looking to create different column division for different screens; say 4 columns for desktop, 3 columns for tablet, 2 columns for smart phones and 1 column for small smart phones. In order to achieve this effect, we would have to apply multiple boostrap classes or rules to each of our columns. 
+Now, if we were looking to create different column division for different screens; say 4 columns for desktop, 3 columns for tablet, 2 columns for smart phones and 1 column for small smart phones. In order to achieve this effect, we would have to apply multiple boostrap classes or rules to each of our columns.
 
 ```
+<!-- Responsive Columns -->
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid purple;">
+        responsive col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid purple;">
+        responsive col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid purple;">
+        responsive col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: yellow; border: 1px solid purple;">
+        responsive col-lg-3 col-md-4 col-sm-6
+    </div>
+</div>
+```
 
+With these classes, we achieve the desired responsive effect of 4 columns => 3 columns => 2 columns => 1 column. For more on responsive breaks, read the documentation of [breakpoints](https://getbootstrap.com/docs/5.1/layout/breakpoints/) and the media queries that bootstrap rules are based on. Here you can customize these queries to your liking, as seen in these [tutorials](https://www.youtube.com/results?search_query=bootstrap+breakpoints+tutorial)
+
+#### Challenge from Angela below:
+
+```
+<!-- Angela Responsive Challenge -->
+<div class="row">
+    <div class="col-lg-2 col-md-3" style="background-color: lightblue; border: 1px dashed #ccc;">
+        col-lg-2 col-md-3
+    </div>
+    <div class="col-lg-2 col-md-3" style="background-color: lightblue; border: 1px dashed #ccc;">
+        col-lg-2 col-md-3
+    </div>
+    <div class="col-lg-2 col-md-3" style="background-color: lightblue; border: 1px dashed #ccc;">
+        col-lg-2 col-md-3
+    </div>
+    <div class="col-lg-2 col-md-3" style="background-color: lightblue; border: 1px dashed #ccc;">
+        col-lg-2 col-md-3
+    </div>
+    <div class="col-lg-2 col-md-3" style="background-color: lightblue; border: 1px dashed #ccc;">
+        col-lg-2 col-md-3
+    </div>
+    <div class="col-lg-2 col-md-3" style="background-color: lightblue; border: 1px dashed #ccc;">
+        col-lg-2 col-md-3
+    </div>
+</div>
 ```
