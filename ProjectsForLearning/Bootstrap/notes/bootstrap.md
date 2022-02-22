@@ -130,14 +130,45 @@ As you can see by the example above, using the <code>row</code> class will gener
 Now say you want to size a single column to a fixed percentage of the screen. Say you want to make a column that is 50% of the screen width. Rather than use the approach above and make one column transparent, you can use the <code>col-#</code> class name.
 <br>
 
-In bootstrap, there are 12 columns that make up the width of the screen. The number that you associate with your <code>col-#</code> class name is the fraction of the 12 total columns that the specified html element will take up. The example below uses <code>col-6</code> class name to create a column that is 50% of the screen width:
+In bootstrap, there are 12 columns that make up the width of the screen. The number that you associate with your <code>col-#</code> class name is the fraction of the 12 total columns that the specified html element will take up. The example below uses <code>col-6</code> class name to create a column that is 50% of the screen width, <code>col-3</code> is a 25% of the screen width, <code>col-2</code> is "2/12" of screen width, etc:
 
 ```
 <div class="row">
     <div class="col-6" style="background: green; border: 1px solid yellow;">
-        Column 1.1
+        Column-6
+    </div>
+    <div class="col-3" style="background: green; border: 1px solid yellow;">
+        Column-3
+    </div>
+    <div class="col-2" style="background: green; border: 1px solid yellow;">
+        Column-2
+    </div>
+    <div class="col-1" style="background: green; border: 1px solid yellow;">
+        Column-1
+    </div>
+</div>
+```
+<blockquote>For more info on columns, visit <a href="https://getbootstrap.com/docs/5.1/layout/columns/">this page</a></blockquote>
+<br>
+
+### Responsive Columns:
+
+When working on a responsive web interface, Bootstrap has class names to account for responsive design. For example, the <code>col-md-6</code> class name is very similar to the previous example, except for when the screen size is less than tablet screen width. When the viewport width decreases, the column will take the full viewport width of the screen:
+
+```
+<!-- Responsive Columns -->
+<div class="row">
+    <div class="col-md-6" style="background-color: blue; border: 1px solid purple;">
+        responsive col-md-6
+    </div>
+        <div class="col-md-6" style="background-color: blue; border: 1px solid purple;">
+        responsive col-md-6
     </div>
 </div>
 ```
 
-<blockquote>For more info on columns, visit <a href="https://getbootstrap.com/docs/5.1/layout/columns/">this page</a></blockquote>
+Now, if we were looking to create different column division for different screens; say 4 columns for desktop, 3 columns for tablet, 2 columns for smart phones and 1 column for small smart phones. In order to achieve this effect, we would have to apply multiple boostrap classes or rules to each of our columns. 
+
+```
+
+```
