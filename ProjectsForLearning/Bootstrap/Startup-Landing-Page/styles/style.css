@@ -1,5 +1,11 @@
 /* Googles fonts embedded link */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Ubuntu:wght@300;400;700&display=swap");
+@import "bootstrap";
+
+/* Custom styling for Bootstrap Container */
+.container-fluid {
+  padding: 3% 10%;
+}
 
 /* Style the Title section*/
 #title {
@@ -11,6 +17,10 @@
   );
 }
 
+.title-text {
+  z-index: 2;
+}
+
 .title-text h1 {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -18,3 +28,4 @@
   font-size: 3rem; /* 3 * 16px = 48px*/
   line-height: 1.5;
 }
+

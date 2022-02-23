@@ -242,3 +242,7 @@ When encompassing your grid layout in a <code>div</code> element with the class 
 <br>
 
 <blockquote><strong>Note:</strong> the <code>container-fluid</code> class ignores the responsive breakpoints and just takes 100% of the screen width at all times.</blockquote>
+
+### [Buttons](https://getbootstrap.com/docs/5.1/components/buttons/) and [Fonts:](https://fontawesome.com/)
+
+You can view the bootstrap documentation to understand more about the syntax for implementing buttons in your web designs. What I wish to understand better is how to customize bootstrap classes. The answer to that lies in using SASS or SCSS to override the SASS rules that make up the bootstrap library. [This](https://www.youtube.com/playlist?list=PL2CB1F80266E986EA) tutorial playlist should be helpful in understand how to use Sass. Also, there is [this](https://www.youtube.com/watch?v=nCX3QVl_PiI) tutorial by The Net Ninja that goes over how to override Bootstrap styles with custom Sass styling.
