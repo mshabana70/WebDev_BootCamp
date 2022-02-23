@@ -15,10 +15,12 @@
     rgb(40, 0, 104) 60%,
     rgb(19, 0, 104) 95%
   );
+  min-height: 100vh;
 }
 
 .title-text {
   z-index: 2;
+  margin-top: 10rem;
 }
 
 .title-text h1 {
@@ -29,3 +31,15 @@
   line-height: 1.5;
 }
 
+/*styling title images*/
+.title-img {
+}
+
+/* Override media queries*/
+@media screen and (max-width: 767px) {
+  .title-img {
+    transform: scale(0.8);
+    transform: rotate(30deg);
+    clip-path: polygon(0% 100%, 100% 75%, 100% 0%, 0% 0%);
+  }
+}
