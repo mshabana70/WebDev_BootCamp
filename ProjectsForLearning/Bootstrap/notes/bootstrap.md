@@ -215,3 +215,30 @@ With these classes, we achieve the desired responsive effect of 4 columns => 3 c
     </div>
 </div>
 ```
+
+### [Containers in Bootstrap:](https://getbootstrap.com/docs/5.1/layout/containers/)
+
+Containers are used often when implementing components or layouts from the bootstrap library. When working with grids, it is a <strong>requirement</strong> to use containers when working with the bootstrap grid layout.
+
+```
+<div class="container">
+    <div class="row">
+        <div class="col">
+            Column 1
+        </div>
+        <div class="col">
+            Column 1
+        </div>
+        <div class="col">
+            Column 1
+        </div>
+    </div>
+</div>
+```
+
+When encompassing your grid layout in a <code>div</code> element with the class "container", you can easily align the contents of your grid, add margin/padding, or justify content of your grid as well. In addition, containers are responsive in respect to the screen size. Take a look at the chart below on container classes and their responsive rules in bootstrap:
+
+<img src="./container-responsive-img.png" alt="container response screenshot" style="margin: 0 auto; max-width: 100%;">
+<br>
+
+<blockquote><strong>Note:</strong> the <code>container-fluid</code> class ignores the responsive breakpoints and just takes 100% of the screen width at all times.</blockquote>
