@@ -11,7 +11,7 @@ body {
   padding: 3% 10%;
 }
 
-/* Style the Title section*/
+/*== Style the Title section ==*/
 #title {
   background-image: linear-gradient(
     180deg,
@@ -19,18 +19,28 @@ body {
     rgb(40, 0, 104) 60%,
     rgb(19, 0, 104) 95%
   );
-  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 /* Navigation Bar */
 .navbar {
-  padding-bottom: 4.5rem !important;
+  padding: 0 0 4.5rem !important;
 }
 
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: thin;
 }
 
 /* Title Section Text */
@@ -42,24 +52,36 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3rem; /* 3 * 16px = 48px*/
+  font-size: 3.5rem; /* 3 * 16px = 48px*/
   line-height: 1.5;
 }
 
-/*styling title images*/
-.title-img {
-  height: 500px;
+/* Download Buttons */
+/* applying styling by selecting a custom class for my download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
 }
 
-.title-img img {
-  max-height: 100%;
-  max-width: 100%;
+/*styling title images*/
+
+.title-image {
+  position: relative;
+  top: -10%;
+  width: 100%;
+  transform: rotate(30deg);
 }
 
 /* Override media queries*/
 @media screen and (max-width: 990px) {
   .title-img img {
-    transform: rotate(-30deg);
+    width: 50%;
+    left: 50%;
+    top: -20%;
+    transform: rotate(30deg);
     /* clip-path: polygon(0% 100%, 100% 75%, 100% 0%, 0% 0%); */
+  }
+
+  .title-text h1 {
+    font-size: 2.5rem;
   }
 }
