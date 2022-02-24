@@ -94,13 +94,14 @@ body {
 .feature-card i {
   color: rgb(19, 0, 104);
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .feature-card i:hover {
   color: rgb(72, 0, 187);
 }
 
-.feature-card h1 {
+.feature-card h2 {
   font-size: 1.5rem;
   font-weight: bold;
 }
