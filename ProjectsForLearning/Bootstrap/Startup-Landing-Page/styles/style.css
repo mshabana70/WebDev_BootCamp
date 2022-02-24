@@ -46,6 +46,7 @@ body {
 /* Title Section Text */
 .title-text {
   z-index: 2;
+  padding-top: 5%;
 }
 
 .title-text h1 {
@@ -90,7 +91,7 @@ body {
 }
 
 .feature-card i:hover {
-    color: rgb(72, 0, 187);
+  color: rgb(72, 0, 187);
 }
 
 .feature-card h1 {
