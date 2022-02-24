@@ -85,6 +85,12 @@ body {
   z-index: 1;
 }
 
+.feature-card:hover {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #8f8f8f;
+  transition: all 0.5s ease;
+}
+
 .feature-card i {
   color: rgb(19, 0, 104);
   font-size: 3rem;
