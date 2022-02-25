@@ -1,0 +1,26 @@
+@use "variables" as v;
+
+// Using Nesting Syntax Here
+.card {
+  display: block;
+  padding: v.$base-padding;
+  border: v.$base-border-thickness solid #ddd;
+  box-shadow: v.$base-box-shadow;
+
+  // .card .card-title {}
+  .card-title {
+    font-size: v.$base-font-size;
+    padding-bottom: v.$base-padding;
+    font-weight: bold;
+  }
+
+  // .card .card-body {}
+  .card-body {
+    font-size: v.$base-font-size;
+
+    // .card .card-body a {}
+    a {
+      text-decoration: underline;
+    }
+  }
+}

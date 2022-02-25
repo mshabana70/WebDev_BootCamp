@@ -1,0 +1,14 @@
+// Importing Partials in Sass
+
+// variables & functions
+@use "variables" as v;
+
+// base & layout
+@use "base" as b;
+
+// colors
+
+// components (button, card, navbar)
+@use "./components/cards" as c;
+
+// utilities (margin, padding, opacity)

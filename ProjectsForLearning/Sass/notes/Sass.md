@@ -94,3 +94,43 @@ Also when importing partials, you must import stylesheets that before other styl
 @use 'variables' as v;
 @use 'base' as b;
 ```
+
+## [Nesting](https://sass-lang.com/documentation/style-rules#nesting)
+
+Normally, in vanilla CSS, when trying to style element the selectors we choose are the direct name of that element or its class. Rules we apply to these elements are often repeated across other elements with that parent element. But Sass wants to make our life a little easier. Rather than repeating the same selector, you can write one style rules inside another. When compiled, sass will automatically combine the outer rule's selector with the inner rule's. Take a look at the example below for clarification:
+
+```
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+```
+
+This is the same as writing these rules in vanilla CSS:
+
+```
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav il {
+    display: inline-block;
+}
+...
+
+```
