@@ -64,3 +64,26 @@ $base-border-radius: 20px;
 ```
 
 <blockquote>Note: This is mainly how CSS libraries like Bootstrap implement properties over multple components.</blockquote>
+
+## [Partials & @Imports](https://www.w3schools.com/sass/sass_import.php)
+
+When our Sass files become lengthy with styling rules, it can become messy and hard to manage. One way to help break up our code into multiple files is by using Sass Partials. For example, the variables that we worked on in the previous section can be placed in their own file, as well as the reset styling rules that must be implemented for every style sheet, etc. It is important to remember that the @import rule is not best practice for implementing partials to our main Sass file. You should use <code>@use</code> or <code>@forward</code> rules when importing your partial files:
+
+```
+// Variables Partial
+// _variables.scss
+$primary: #326dee;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+// style.scss
+// @import "variables";
+@use "variables" as v;
+
+h1 {
+  color: v.$primary;
+}
+```
+
+<blockquote>Note: Be cautious of which file you are sourcing in your gulpfile.js. If you have a global parameter such as '*.scss', than you will be compiling and watching your partials as well. It is important that you include the underscore in front of your partials for the Sass compiler to ignore said files, e.g '_variables.scss'</blockquote>
