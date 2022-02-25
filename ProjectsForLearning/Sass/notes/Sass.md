@@ -87,3 +87,10 @@ h1 {
 ```
 
 <blockquote>Note: Be cautious of which file you are sourcing in your gulpfile.js. If you have a global parameter such as '*.scss', than you will be compiling and watching your partials as well. It is important that you include the underscore in front of your partials for the Sass compiler to ignore said files, e.g '_variables.scss'</blockquote>
+
+Also when importing partials, you must import stylesheets that before other stylesheets that may implements the previous stylesheet's rules. For example, say in our base.scss we use variables that are in the variables.scss partial. In order to make sure those variables are invoked within the variables.scss file, this would be the order of our partials imports:
+
+```
+@use 'variables' as v;
+@use 'base' as b;
+```
