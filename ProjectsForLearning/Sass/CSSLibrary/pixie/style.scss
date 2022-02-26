@@ -1,6 +1,7 @@
 // Importing Partials in Sass
 
 // variables & functions
+@use "functions" as f;
 @use "variables" as v;
 
 // base & layout
