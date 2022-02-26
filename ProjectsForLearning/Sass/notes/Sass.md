@@ -134,3 +134,40 @@ nav il {
 ...
 
 ```
+
+## [Using Maps in Sass:](https://sass-lang.com/documentation/values/maps)
+
+Maps in Sass are very similar to Map data structures in programming. They are associative arrays that are made up of (key, value) pairs. Here is an example of the syntax of maps in Sass:
+
+```
+(<expression>: <expression>, <expression>: <expression>)
+```
+
+The <a href="https://sass-lang.com/documentation/syntax/structure#expressions">expression</a> before the colon is the key, where as the expression that follows the colon is the value that is associated with the key. Keys must be unique but values can be duplicates. Unlike <a  href="https://sass-lang.com/documentation/values/lists">lists</a>, all maps must be written with <code>()</code> around the key-value pairs. For my custom CSS library, it makes sense to create a color palette using maps. Lets take a look at how that would work:
+
+```
+// Variables for Theme Colors
+$primary: #326dee;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+// Color Palette using Maps
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #808080,
+  "black": black,
+  "white": white,
+);
+```
+
+<blockquote>Note: You can utilize variables within other data structures, as seen above.</blockquote>
