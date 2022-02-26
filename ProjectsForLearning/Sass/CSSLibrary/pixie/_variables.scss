@@ -21,6 +21,11 @@ $colors: (
   "white": white,
 );
 
+// Using map on a test rule
+.test-btn {
+  background-color: map-get($colors, "purple");
+}
+
 // Lets use @debug to show how to look up values in maps:
 // note: uncomment to see outputs in console
 // @debug map-get($colors, "purple"); // #9900ff

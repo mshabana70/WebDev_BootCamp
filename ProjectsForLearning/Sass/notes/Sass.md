@@ -171,3 +171,19 @@ $colors: (
 ```
 
 <blockquote>Note: You can utilize variables within other data structures, as seen above.</blockquote>
+<br>
+It is important to remember that Sass maps are <a href="https://sass-lang.com/documentation/values/maps#immutability"><em>immutable</em></a>, meaning all the contents of the original map never change. All of Sass's <a href="https://www.w3schools.com/sass/sass_functions_map.php">map functions</a> return new maps rather than modify the original map you created. There is way to work around this by updating the state of your maps. By using mixins, you can assign new maps to the same map variable as seen below:
+
+```
+@use "sass:map";
+
+$prefixes-by-browser: ("firefox": moz, "safari": webkit, "ie": ms);
+
+@mixin add-browser-prefix($browser, $prefix) {
+  $prefixes-by-browser: map.merge($prefixes-by-browser, ($browser: $prefix)) !global;
+}
+
+@include add-browser-prefix("opera", o);
+@debug $prefixes-by-browser;
+// ("firefox": moz, "safari": webkit, "ie": ms, "opera": o)
+```
