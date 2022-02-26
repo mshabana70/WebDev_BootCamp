@@ -27,11 +27,17 @@
   // background-color: #ccc;
 
   @include btn; // default value for parameter is #e2e2e2
+  &:hover {
+    background-color: lighten(#e2e2e2, 5);
+  }
 }
 
 .btn-outline {
   @include btn(transparent);
   border: v.$base-border-thickness solid #e2e2e2;
+  &:hover {
+    background-color: #e2e2e2;
+  }
 }
 
 @each $key, $val in v.$colors {
@@ -44,6 +50,12 @@
     // border-radius: v.$base-border-radius / 2;
 
     @include btn($val); // replaces repeated code
+    &:hover {
+      background-color: lighten(
+        $val,
+        10
+      ); // lighten(color, weight to lighten by(percentage))
+    }
   }
 
   .btn-outline-#{$key} {
@@ -57,5 +69,8 @@
     @include btn(transparent); // replaces repeated code
     color: $val;
     border: v.$base-border-thickness solid $val;
+    &:hover {
+      background-color: $val;
+    }
   }
 }

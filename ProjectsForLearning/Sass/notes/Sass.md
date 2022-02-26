@@ -1,12 +1,14 @@
 # Sass/Scss
 
 CSS with superpowers! A language that extends CSS with extra features or "Superpowers." These extra features help make styling easier and faster as well. Sass also implements programming principles like variables, inheritance, loops, and functions into css to make it a more flexible language. Through out this document, I will summarize and implement key concepts in Sass to help explain why this language has become a Dev Community favorite over the last few years.
+<br><br>
 
 ## [Compiling Sass](https://www.youtube.com/watch?v=Sk5jMurFHCo&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb&index=2)
 
 The key difference between a <code>.sass</code> and a <code>.scss</code> file is the syntax used in both files. In Scss, the syntax is nearly identical to that of vanilla CSS. Even traditional CSS syntax is acceptable and can be compiled in .scss files. It is important to understand that Internet Browsers are not capable of understanding Sass-specific features and syntax, they are capable of reading vanilla CSS syntax. In order to convert our .scss to .css it must be compiled. When using the VS Code IDE, you can install the "Live Sass Compiler" extension to compile your .scss files to .css files for browsers to implement the styles. You can also use the "gulp.js" package to compile and also debug through sass files (note: you will need Node.JS to use NPM for package installation).
 
 <blockquote>Reference Net Ninja Gulp installation video for guidence on installing Gulp package</blockquote>
+<br><br>
 
 ## [Variables](https://sass-lang.com/documentation/variables)
 
@@ -64,6 +66,7 @@ $base-border-radius: 20px;
 ```
 
 <blockquote>Note: This is mainly how CSS libraries like Bootstrap implement properties over multple components.</blockquote>
+<br><br>
 
 ## [Partials & @Imports](https://www.w3schools.com/sass/sass_import.php)
 
@@ -94,6 +97,8 @@ Also when importing partials, you must import stylesheets that before other styl
 @use 'variables' as v;
 @use 'base' as b;
 ```
+
+<br><br>
 
 ## [Nesting](https://sass-lang.com/documentation/style-rules#nesting)
 
@@ -134,6 +139,8 @@ nav il {
 ...
 
 ```
+
+<br><br>
 
 ## [Using Maps in Sass:](https://sass-lang.com/documentation/values/maps)
 
@@ -187,6 +194,8 @@ $prefixes-by-browser: ("firefox": moz, "safari": webkit, "ie": ms);
 @debug $prefixes-by-browser;
 // ("firefox": moz, "safari": webkit, "ie": ms, "opera": o)
 ```
+
+<br><br>
 
 ## [Loops](https://sass-lang.com/documentation/at-rules/control)
 
@@ -256,6 +265,7 @@ $icons:
 ```
 
 <blockquote>Note: It is important to remember that the variables instantiated in the @each rule only exist within that rule, never outside of the @each rule block.</blockquote>
+<br><br>
 
 ## [Conditionals](https://sass-lang.com/documentation/at-rules/control/if)
 
@@ -268,6 +278,7 @@ Very similar to how conditionals are written in most programming languages, usin
 ```
 
 In this example, <code>expression</code> represents a condition that either returns true or false. If true, the follow block of styling will be executed. If false, the block of code will not be executed and the program moves on to the following rules.
+<br><br>
 
 ## [Parent Selectors](https://sass-lang.com/documentation/style-rules/parent-selector)
 
@@ -293,4 +304,64 @@ a{
 }
 ```
 
+<br><br>
 
+## [Mixins](https://sass-lang.com/documentation/at-rules/mixin)
+
+Since it is common in CSS to reuse properties for many different elements and classes, Sass allows us to group these reusable blocks of styling in to something called a <code>@mixin</code>. Mixins can contain any statement, other than top-level statements, and can be dropped into single style rules. They can also be used to contain their own styles outside of other style rules, as well as modify variables. To place them into a style rule, you must use the <code>@include</code> at-rule to place them:
+
+```
+@mixin btn {
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+}
+
+.btn-default {
+    @include btn; // implements styles from mixin
+}
+```
+
+Say you wish to make your mixin more dynamic, where it can respond to different situations. By implementing an argument, you can have the styling within a mixin change based on your needs. Lets reuse the example above:
+
+```
+@mixin btn($bg-color, $text-color) {
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+.btn-blue {
+    @include btn(blue, black);
+}
+```
+
+Now if you have a mixin with arguments but you dont need them for all situations, you can apply default values to the arguments that the mixin can "default" to when no value is passed:
+
+```
+@mixin btn($bg-color, $text-color: white) {
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+.btn-blue {
+    @include btn(blue, 0);
+}
+```
+
+<blockquote>Note: Visit the link from the Mixin header for more ways to use or implement mixins.</blockquote>
+<br><br>
+
+## [Functions](https://sass-lang.com/documentation/at-rules/function)
+
+Functions work very similar to mixins but also can work very differently. Functions can take in arguments and return values when implemented. They help organize complex calculations and make it much easier to read your code. It is common practice to leave <code>@mixins</code> for side-effects and <code>@function</code> for computing values.
