@@ -1,5 +1,6 @@
 @use "functions" as f;
 @use "variables" as v;
+@use "sass:math";
 
 // create a mixin
 @mixin btn($bg-color: #e2e2e2) {
@@ -8,7 +9,7 @@
   display: inline-block;
   border: 0;
   padding: v.$base-padding (v.$base-padding * 2);
-  border-radius: v.$base-border-radius / 2;
+  border-radius: math.div(v.$base-border-radius, 2);
   background-color: $bg-color;
   // Check the background color to contrast text color
   @if $bg-color == white {
