@@ -1,0 +1,61 @@
+@use "variables" as v;
+
+// create a mixin
+@mixin btn($bg-color: #e2e2e2) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: v.$base-padding (v.$base-padding * 2);
+  border-radius: v.$base-border-radius / 2;
+  background-color: $bg-color;
+  // Check the background color to contrast text color
+  @if $bg-color == white {
+    color: black;
+  } @else if $bg-color == black {
+    color: white;
+  }
+}
+
+.btn {
+  // text-decoration: none;
+  // cursor: pointer;
+  // display: inline-block;
+  // border: 0;
+  // padding: v.$base-padding (v.$base-padding * 2);
+  // border-radius: v.$base-border-radius;
+  // background-color: #ccc;
+
+  @include btn; // default value for parameter is #e2e2e2
+}
+
+.btn-outline {
+  @include btn(transparent);
+  border: v.$base-border-thickness solid #e2e2e2;
+}
+
+@each $key, $val in v.$colors {
+  .btn-#{$key} {
+    // text-decoration: none;
+    // cursor: pointer;
+    // display: inline-block;
+    // border: 0;
+    // padding: v.$base-padding (v.$base-padding * 2);
+    // border-radius: v.$base-border-radius / 2;
+
+    @include btn($val); // replaces repeated code
+  }
+
+  .btn-outline-#{$key} {
+    // font-size: v.$base-font-size;
+    // text-decoration: none;
+    // cursor: pointer;
+    // display: inline-block;
+    // padding: v.$base-padding (v.$base-padding * 2);
+    // border-radius: v.$base-border-radius / 2;
+
+    @include btn(transparent); // replaces repeated code
+    color: $val;
+    border: v.$base-border-thickness solid $val;
+  }
+}
