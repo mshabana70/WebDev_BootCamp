@@ -256,3 +256,15 @@ $icons:
 ```
 
 <blockquote>Note: It is important to remember that the variables instantiated in the @each rule only exist within that rule, never outside of the @each rule block.</blockquote>
+
+## [Conditionals](https://sass-lang.com/documentation/at-rules/control/if)
+
+Very similar to how conditionals are written in most programming languages, using conditionals in Sass are just about the same. The syntax of an If/Else statement is as follows:
+
+```
+@if <expression> {...}
+@else if <expression> {...}
+@else {...}
+```
+
+In this example, <code>expression</code> represents a condition that either returns true or false. If true, the follow block of styling will be executed. If false, the block of code will not be executed and the program moves on to the following rules.
