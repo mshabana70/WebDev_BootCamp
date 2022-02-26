@@ -1,0 +1,39 @@
+// import variables partial
+@use "variables" as v;
+
+// Loops
+@each $key, $val in v.$colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  // nested loop
+
+  @for $i from 1 through 9 {
+    // light variations
+    .text-#{$key}-light-#{$i} {
+      color: mix(
+        white,
+        $val,
+        $i * 10
+      ); // mix(first color, second color, weight of mix(percentage))
+    }
+
+    .bg-#{$key}-light-#{$i} {
+      background-color: mix(white, $val, $i * 10);
+    }
+
+    // dark variations
+    .text-#{$key}-dark-#{$i} {
+      color: mix(black, $val, $i * 10);
+    }
+
+    .bg-#{$key}-dark-#{$i} {
+      background-color: mix(black, $val, $i * 10);
+    }
+  }
+}

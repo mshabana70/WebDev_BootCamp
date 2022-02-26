@@ -187,3 +187,72 @@ $prefixes-by-browser: ("firefox": moz, "safari": webkit, "ie": ms);
 @debug $prefixes-by-browser;
 // ("firefox": moz, "safari": webkit, "ie": ms, "opera": o)
 ```
+
+## [Loops](https://sass-lang.com/documentation/at-rules/control)
+
+In Sass, there is the <code>@each</code> rule. This is basically the loop tool for Sass, which makes it alot easier to iterate through arrays, lists, or maps. It is also great for repetitive styles that only have a few variations between them. The syntax for @each is as follows:
+
+```
+@each <variable> in <expression> {
+    ...
+}
+```
+
+<blockquote>Note: <code>expression</code> returns a list.</blockquote>
+
+Since we just spoke about the use of maps in Sass, lets check out how we would iterate through Maps with the <code>@each</code> rule:
+
+```
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "blue": #1919e6
+);
+
+@each $color in $colors {
+    .btn-#{$color} {
+        display: inline-block
+        background-color: $color;
+    }
+}
+
+```
+
+You can also iterate through multiple variables within a map, for example:
+
+```
+$padding: (
+    "small": 5px,
+    "large": 10px,
+    "x-large": 20px,
+    "2x-large": 40px,
+);
+
+@each $name, $size in $padding {
+    .btn-#{$name} {
+        background: #fff;
+        border: 1px solid #000;
+        padding: $size;
+    }
+}
+```
+
+When working with lists, especially a list of list, you can assign variables dynamically when iterating through the list variable using <code>@each</code>:
+
+```
+$icons:
+  "eye" "\f112" 12px,
+  "start" "\f12e" 16px,
+  "stop" "\f12f" 10px;
+
+@each $name, $glyph, $size in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+    font-size: $size;
+  }
+}
+```
+
+<blockquote>Note: It is important to remember that the variables instantiated in the @each rule only exist within that rule, never outside of the @each rule block.</blockquote>
