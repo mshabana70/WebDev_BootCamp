@@ -268,3 +268,6 @@ Very similar to how conditionals are written in most programming languages, usin
 ```
 
 In this example, <code>expression</code> represents a condition that either returns true or false. If true, the follow block of styling will be executed. If false, the block of code will not be executed and the program moves on to the following rules.
+
+## [Parent Selectors](https://sass-lang.com/documentation/style-rules/parent-selector)
+

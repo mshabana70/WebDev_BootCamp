@@ -7,6 +7,17 @@
     color: $val;
   }
 
+  .text-hover-#{$key} {
+    // Parent Selector
+    &:hover {
+      color: $val;
+    }
+    &:last-child {
+    }
+    &:nth-child(2) {
+    }
+  }
+
   .bg-#{$key} {
     background-color: $val;
   }
@@ -36,6 +47,21 @@
 
       .bg-#{$key}-dark-#{$i} {
         background-color: mix(black, $val, $i * 10);
+      }
+
+      // hover effect using parent selector
+      .text-hover-#{$key}-light-#{$i} {
+        // Parent Selector
+        &:hover {
+          color: mix(white, $val, $i * 10);
+        }
+      }
+
+      .text-hover-#{$key}-dark-#{$i} {
+        // Parent Selector
+        &:hover {
+          color: mix(black, $val, $i * 10);
+        }
       }
     }
   }
