@@ -271,3 +271,26 @@ In this example, <code>expression</code> represents a condition that either retu
 
 ## [Parent Selectors](https://sass-lang.com/documentation/style-rules/parent-selector)
 
+The parent selector is a Sass invention where you can target the parent element of nested pseudo elements. The best way to explain this is through examples:
+
+```
+// Rather than:
+a {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+// With parent selector
+a{
+    color: red;
+
+    &:hover {
+        color: blue;
+    }
+}
+```
+
+
