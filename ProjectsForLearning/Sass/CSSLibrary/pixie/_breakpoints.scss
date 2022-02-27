@@ -1,0 +1,81 @@
+// Breakpoints for media queries
+// will help make our elements responsive
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+// mixins for each breakpoint so you can apply rules based
+// on screen sizes
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content; // dynamically implements content block
+    // whatever properties are placed inside the mixin when used
+    // will replace the @content rule here.
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content; // dynamically implements content block
+    // whatever properties are placed inside the mixin when used
+    // will replace the @content rule here.
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content; // dynamically implements content block
+    // whatever properties are placed inside the mixin when used
+    // will replace the @content rule here.
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content; // dynamically implements content block
+    // whatever properties are placed inside the mixin when used
+    // will replace the @content rule here.
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content; // dynamically implements content block
+    // whatever properties are placed inside the mixin when used
+    // will replace the @content rule here.
+  }
+}
+
+// more flexible breakpoint option
+// default is 0
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+// test selector to see these mixins in action
+.responsive-test {
+  @include xs {
+    color: red;
+  }
+  @include sm {
+    color: blue;
+  }
+  @include md {
+    color: green;
+  }
+  @include lg {
+    color: purple;
+  }
+  @include xl {
+    color: orange;
+  }
+  @include breakpoint(1400px) {
+    color: pink;
+  }
+}

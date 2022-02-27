@@ -4,8 +4,9 @@
 @use "functions" as f;
 @use "variables" as v;
 
-// base & layout
+// base & layout & breakpoints
 @use "base" as b;
+@use "breakpoints";
 
 // colors
 @use "colors" as co;
