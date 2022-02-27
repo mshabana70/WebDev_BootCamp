@@ -381,3 +381,17 @@ In this example, our <code>light-comp()</code> function takes in a color paramet
 
 <br><br>
 
+## [Extend](https://sass-lang.com/documentation/at-rules/extend#mandatory-and-optional-extends)
+
+Both Extends and mixins are methods to encapsulate and reuse styles in Sass. It is best practice to use <code>@extend</code> when you're expressing a relationship between semantic classes.
+
+```
+.error {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+
+.error--serious {
+    @extend .error;
+}
+```
