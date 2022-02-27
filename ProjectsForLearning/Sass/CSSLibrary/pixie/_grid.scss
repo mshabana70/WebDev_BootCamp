@@ -1,4 +1,77 @@
-@use "breakpoints";
-
+@use "breakpoints" as b;
+@use "sass:math";
 
 // We are creating a grid
+// Here we create the total number
+// of columns in our grid system
+$grid-columns: 20;
+
+// base layout classes
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; // padding, margin, border apart of total width.
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap; // push extra elements to next row down
+}
+
+// column classes
+// example from other libraries: .col-xs.12, .col-md-6
+// means if screen is xs, give element a width of 12 columns
+
+@include b.xs {
+  @for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+      // defining the width based on the number of
+      // columns you wish the element to take up
+    }
+  }
+}
+
+@include b.sm {
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+
+@include b.md {
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+
+@include b.lg {
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+
+@include b.xl {
+  @for $i from 1 through $grid-columns {
+    .col-xl-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
