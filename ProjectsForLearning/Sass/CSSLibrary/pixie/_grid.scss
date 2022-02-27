@@ -6,6 +6,16 @@
 // of columns in our grid system
 $grid-columns: 20;
 
+// map of grid gaps
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+  "4": 40px,
+  "5": 50px,
+);
+
 // base layout classes
 .container {
   width: 100%;
@@ -18,6 +28,18 @@ $grid-columns: 20;
 .row {
   display: flex;
   flex-flow: row wrap; // push extra elements to next row down
+}
+
+// grid gap classes
+@each $key, $value in $grid-gaps {
+  .gap-#{$key} > * {
+    // get immediate child element (usually a col class)
+    padding: #{$value};
+  }
+  .gap-#{$key} {
+    margin-left: -$value;
+    margin-right: -$value;
+  }
 }
 
 // column classes
