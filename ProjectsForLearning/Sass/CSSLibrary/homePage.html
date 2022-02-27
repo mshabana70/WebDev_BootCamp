@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar-secondary">
+    <nav class="navbar-orange">
         <div class="container">
             <h2 class="site-title">Pixie Designs</h2>
             <ul class="display-f">
@@ -22,14 +22,14 @@
 
     <!-- Intro Section -->
     <div class="container mt-5">
-        <div class="row justify-center gap-1">
+        <div class="row justify-space-between gap-1">
             <div class="col-xs-20 col-md-9">
                 <h2>
-                    <div class="font-xxl">Black-Belt</div>
-                    <div class="font-xxl text-secondary">Our Website</div>
+                    <div class="font-xxl">Test-Site</div>
+                    <div class="font-xxl text-orange">Our Website</div>
                 </h2>
                 <p class="text-gray mt-2 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iure nisi placeat qui assumenda blanditiis explicabo fugit aperiam, totam quos?</p>
-                <a href="#work" class="btn-outline-secondary text-secondary text-hover-white">View Our Work</a>
+                <a href="#work" class="btn-outline-orange text-orange text-hover-white">View Our Work</a>
             </div>
             <div class="col-xs-20 col-md-9">
                 <img src="./img/laptop.jpeg" alt="Intro Image">
@@ -37,8 +37,86 @@
         </div>
     </div>
 
+    <!-- About Section -->
+    <section id="about" class="bg-orange-light-7 mt-5 pt-4 pb-4">
+        <div class="container">
+            <h2 class="mb-2 text-center">About the Pixie Design</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis fuga 
+                consequuntur, excepturi voluptate dolorem ad delectus ut nam fugit! Minima 
+                deserunt possimus repudiandae eos soluta minus vero beatae iusto, neque id 
+                voluptatum dolorem quibusdam?
+            </p>
+            <p class="mt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis fuga
+                consequuntur, excepturi voluptate dolorem ad delectus ut nam fugit! Minima
+                deserunt possimus repudiandae eos soluta minus vero beatae iusto, neque id
+                voluptatum dolorem quibusdam?
+            </p>
+        </div>
+    </section>
+
     <!-- Work Section -->
+    <section id="work" class="mt-5">
+        <div class="container">
+            <h2 class="mb-2 text-center">Some of Our Work</h2>
+            <div class="row gap-2">
+                <div class="col-xs-20 col-md-10 col-lg-5">
+                    <div class="card p-0">
+                        <h3 class="card-title m-1">
+                            Technical Documentation
+                        </h3>
+                        <img src="./img/techDoc.png" alt="Technical Documentation">
+                        <p class="m-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, optio.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-20 col-md-10 col-lg-5">
+                    <div class="card p-0">
+                        <h3 class="card-title m-1">
+                            Blockchain Landing Page
+                        </h3>
+                        <img src="./img/blockchainProject.png" alt="Blockchain">
+                        <p class="m-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, optio.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-20 col-md-10 col-lg-5">
+                    <div class="card p-0">
+                        <h3 class="card-title m-1">
+                            FCC Survey Page
+                        </h3>
+                        <img src="./img/surveryProject.png" alt="Survey Project">
+                        <p class="m-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, optio.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-20 col-md-10 col-lg-5">
+                    <div class="card p-0">
+                        <h3 class="card-title m-1">
+                            Sample Product Landing Page
+                        </h3>
+                        <img src="./img/productProject.png" alt="Product Landing Page">
+                        <p class="m-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, optio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-center mt-2">
+                <a class="btn-orange display-i text-white font-md" href="https://github.com/mshabana70" target="_blank">View All</a>
+            </div>
+        </div>
+    </section>
 
-
+    <!-- Footer Section -->
+    <footer class="bg-gray-light-7 pt-3 pb-3 mt-5">
+        <div class="container text-center">
+            Copyright &copy; 2022 Pixie Designs
+        </div>
+    </footer>
 </body>
 </html>
