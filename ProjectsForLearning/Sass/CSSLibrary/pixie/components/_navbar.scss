@@ -1,0 +1,36 @@
+@use "variables" as v;
+
+%flex-layout {
+  // placeholder rule
+  // selectors with the % are considered placeholders
+  // placeholders are not compiled in css BUT there styles
+  // can still be used with the @extend at-rule
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+// create navbar class
+.navbar {
+  @extend %flex-layout; // apply styles of .flex-layout
+  padding: v.$base-padding v.$base-padding * 2;
+  box-shadow: v.$base-box-shadow;
+
+  .site-title {
+    font-size: v.$font-size-lg;
+  }
+
+  .container {
+    @extend %flex-layout; // apply flex styling to containers WITHIN navbar selector
+  }
+}
+
+@each $key, $val in v.$colors {
+  .navbar-#{$key} {
+    // extend navbar styles and the flex-layout styles that are extended with the navbar selector
+    @extend .navbar;
+    background-color: $val;
+  }
+}
