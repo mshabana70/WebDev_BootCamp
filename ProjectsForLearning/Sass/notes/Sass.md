@@ -364,4 +364,20 @@ Now if you have a mixin with arguments but you dont need them for all situations
 
 ## [Functions](https://sass-lang.com/documentation/at-rules/function)
 
-Functions work very similar to mixins but also can work very differently. Functions can take in arguments and return values when implemented. They help organize complex calculations and make it much easier to read your code. It is common practice to leave <code>@mixins</code> for side-effects and <code>@function</code> for computing values.
+Functions work very similar to mixins but also can work very differently. Functions can take in arguments and return values when implemented. They help organize complex calculations and make it much easier to read your code. It is common practice to leave <code>@mixins</code> for side-effects and <code>@function</code> for computing values. Example of a function for finding complement colors to our styled components:
+
+```
+@function light-comp($color) {
+  $complement: complement($color);
+  $light-complement: lighten($complement, 30%);
+
+  @return $light-complement;
+}
+```
+
+In this example, our <code>light-comp()</code> function takes in a color parameter of variable <code>$color</code>. We then instantiate two variables within the scope of our function;<code>$complement</code> and <code>$light-complement</code>. Our complement variable's value is set to the result of the built in sass function <code>complement()</code>, which returns the RGB complement of the passed in color parameter. We then lighten that returned color by 30% using the built in <code>lighten()</code> function, which we set the returned value to the variable <code>$light-complement</code>. Finally, we return the light-complement variable at the end of our function using the <code>@return</code> at-rule.
+
+<blockquote>Note: Functions can get more complicated than this and can make some very cool calculations.</blockquote>
+
+<br><br>
+
