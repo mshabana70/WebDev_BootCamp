@@ -16,6 +16,8 @@
 @use "./components/cards" as c;
 @use "./components/button" as btn;
 @use "./components/navbar" as n;
+@use "./components/badge" as bg;
+@use "./components/favorite" as s;
 
 // utilities (margin, padding, opacity)
 @use "utilities" as u;

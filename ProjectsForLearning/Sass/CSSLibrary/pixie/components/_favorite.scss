@@ -1,0 +1,29 @@
+@use "sass:math";
+@use "variables" as v;
+
+@mixin star($bg-color: v.$primary) {
+  clip-path: polygon(
+    35% 50%,
+    50% 30%,
+    65% 50%,
+    100% 50%,
+    70% 60%,
+    90% 80%,
+    50% 65%,
+    10% 80%,
+    30% 60%,
+    0% 50%
+  );
+  padding: v.$base-padding v.$base-padding;
+  background-color: $bg-color;
+}
+
+.star {
+  @include star;
+}
+
+@each $key, $val in v.$colors {
+  .star-#{$key} {
+    @include star($val);
+  }
+}
