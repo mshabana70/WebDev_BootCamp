@@ -67,6 +67,7 @@ $utilities: (
       "3": v.$base-margin * 4,
       "4": v.$base-margin * 6,
       "5": v.$base-margin * 8,
+      "auto": auto,
     ),
   ),
   "margin-left": (
@@ -78,6 +79,7 @@ $utilities: (
       "3": v.$base-margin * 4,
       "4": v.$base-margin * 6,
       "5": v.$base-margin * 8,
+      "auto": auto,
     ),
   ),
   "margin-right": (
@@ -89,6 +91,7 @@ $utilities: (
       "3": v.$base-margin * 4,
       "4": v.$base-margin * 6,
       "5": v.$base-margin * 8,
+      "auto": auto,
     ),
   ),
   "margin-top": (
@@ -100,6 +103,7 @@ $utilities: (
       "3": v.$base-margin * 4,
       "4": v.$base-margin * 6,
       "5": v.$base-margin * 8,
+      "auto": auto,
     ),
   ),
   "margin-bottom": (
@@ -111,6 +115,7 @@ $utilities: (
       "3": v.$base-margin * 4,
       "4": v.$base-margin * 6,
       "5": v.$base-margin * 8,
+      "auto": auto,
     ),
   ),
   "opacity": (
@@ -139,14 +144,23 @@ $utilities: (
       "full": 50%,
     ),
   ),
+  "box-sizing": (
+    "prefix": "box",
+    "values": (
+      "border": border-box,
+      "content": content-box,
+      "initial": initial,
+      "inherit": inherit,
+    ),
+  ),
   "display": (
     "prefix": "display",
     "values": (
-      "n": "none",
-      "b": "block",
-      "i": "inline",
-      "f": "flex",
-      "i-f": "inline-block",
+      "n": none,
+      "b": block,
+      "i": inline,
+      "f": flex,
+      "i-f": inline-block,
     ),
   ),
   "font-size": (
@@ -159,6 +173,49 @@ $utilities: (
       "xxl": v.$font-size-xxl,
     ),
   ),
+  "text-align": (
+    "prefix": "text",
+    "values": (
+      "left": left,
+      "center": center,
+      "right": right,
+      "justify": justify,
+      "initial": initial,
+      "inherit": inherit,
+    ),
+  ),
+  "height": (
+    "prefix": "h",
+    "values": (
+      "50": v.$base-height * 5,
+      "100": v.$base-height * 10,
+      "200": v.$base-height * 20,
+      "300": v.$base-height * 30,
+      "400": v.$base-height * 40,
+      "500": v.$base-height * 50,
+      "600": v.$base-height * 60,
+      "700": v.$base-height * 70,
+      "800": v.$base-height * 80,
+      "900": v.$base-height * 90,
+      "1000": v.$base-height * 100,
+    ),
+  ),
+  "width": (
+    "prefix": "w",
+    "values": (
+      "50": v.$base-width * 5,
+      "100": v.$base-width * 10,
+      "200": v.$base-width * 20,
+      "300": v.$base-width * 30,
+      "400": v.$base-width * 40,
+      "500": v.$base-width * 50,
+      "600": v.$base-width * 60,
+      "700": v.$base-width * 70,
+      "800": v.$base-width * 80,
+      "900": v.$base-width * 90,
+      "1000": v.$base-width * 100,
+    ),
+  ),
 );
 
 // generate utility classes
@@ -166,12 +223,10 @@ $utilities: (
   $prefix: map-get($map, "prefix");
   $values: map-get($map, "values");
 
-  @debug $values;
   @each $key, $val in $values {
     @if ($key == "default") {
       .#{$prefix} {
         #{$property}: $val;
-        @debug #{$prefix};
       }
     } @else {
       .#{$prefix}-#{$key} {
