@@ -396,6 +396,8 @@ Both Extends and mixins are methods to encapsulate and reuse styles in Sass. It 
 }
 ```
 
+<br><br>
+
 ### [Inheritance](https://sass-lang.com/documentation/style-rules/placeholder-selectors)
 
 Inheritance works very similar to how we extend selectors from the previous example. But since all of our sass code is compiled to css code, our inherited methods will also be compiled. This can result in unnecessarily large stylesheets for our webpage and be a burden for production. One method around this is by using <strong>placeholder</strong> selectors. Placeholder selectors are defined by the "%" operator, and basically states that the placeholder selector will not be compiled into the main css stylesheet, but its style rule will still be inherited by any selector that extends it using the <code>@extend</code> at-rule. Here is an example below of the placeholder selector in actions:
@@ -424,5 +426,19 @@ Inheritance works very similar to how we extend selectors from the previous exam
 .warning {
     @extend %message-shared;
     border-color: yellow;
+}
+```
+
+<br><br>
+
+## Set Text based on Background function
+
+```
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
 }
 ```
