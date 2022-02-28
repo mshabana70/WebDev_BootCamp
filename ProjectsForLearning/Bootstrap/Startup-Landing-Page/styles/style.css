@@ -9,6 +9,11 @@ body {
 /* Custom styling for Bootstrap Container */
 .container-fluid {
   padding: 3% 10%;
+  box-sizing: border-box;
+}
+
+.row {
+  box-sizing: border-box;
 }
 
 /*== Style the Title section ==*/
@@ -71,6 +76,8 @@ body {
   width: 100%;
   transform: rotate(30deg);
   z-index: 0;
+  animation: takeOff 2s ease-out;
+  /* animation: wobble 3s linear infinite; */
 }
 
 /*== Features Section ==*/
@@ -110,7 +117,66 @@ body {
   color: #8f8f8f;
 }
 
-/* Override media queries*/
+/*== Testimonial Section ==*/
+#testimonials {
+  padding: 7% 10%;
+  text-align: center;
+  background-color: rgb(19, 0, 104);
+  color: #fff;
+}
+
+.testimonial-text p {
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+.testimonial-profile {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin: 0 2rem 0 1rem;
+}
+
+.testimonial-text h2,
+.testimonial-text h3 {
+  font-size: 1rem;
+  color: #ccc;
+  /* margin-top: 0.5rem; */
+}
+
+.testimonial-text h3 {
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+.testimonial-text .rating {
+  text-align: center;
+  color: #ccc;
+}
+
+/*== Press Section ==*/
+#press {
+  background-color: rgb(19, 0, 104);
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.press-logo {
+  display: inline-block;
+  width: 10%;
+  margin: 1rem 2rem;
+  animation: pressLogo 3s linear infinite;
+}
+
+/* Override media queries */
 @media screen and (max-width: 990px) {
   .title-img img {
     width: 50%;
@@ -122,5 +188,28 @@ body {
 
   .title-text h1 {
     font-size: 2.5rem;
+  }
+}
+
+/* Custom Animations */
+@keyframes takeOff {
+  from {
+    transform: translate(-100%, 110%);
+    /* transform: rotate(30deg); */
+  }
+
+  to {
+    transform: translate(0, 0);
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes pressLogo {
+  0% {
+    left: -20%;
+  }
+
+  100% {
+    left: 100%;
   }
 }
