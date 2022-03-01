@@ -3,6 +3,7 @@
 ### What is Bootstrap?
 
 Bootstrap is a front-end library with pre-written code that can be re-used when styling a website. Helps make web design easier and more consistent. It is also an open-source library, and the second most starred library on [github](https://github.com/twbs/bootstrap).
+<br><br>
 
 ### What can you do with Bootstrap?
 
@@ -12,6 +13,7 @@ Here are some things you can use the bootstrap library for:
   - Web pages can respond to different viewports (screen sizes) across different devices.
 - Pre-Styled Elements:
   - [Codeply](https://www.codeply.com/) is similar to codepen but allows you to used these front-end libraries to create frontend styles and projects.
+    <br><br>
 
 ### How to use Boostrap
 
@@ -34,10 +36,13 @@ First in order to use the bootstrap library, you must import the bootstrap libra
 ```
 
 After that you can use predefined class name to apply styling to your html elements.
+<br><br>
 
 ### Bootstrap Examples
 
 One neat thing about bootstrap library is that there are premade template designs that you can download and reference in your own web designs. Check out these bootstrap examples [here](https://getbootstrap.com/docs/5.1/examples/).
+
+<br><br>
 
 ### Bootstrap Installation
 
@@ -89,6 +94,8 @@ There are three ways to install the bootstrap library for your websites:
    - This means all the stylesheets in the bootstrap download bundle will have to be redownloaded everytime the website loads up.
    - This could possibly lead to increased latency
 
+<br><br>
+
 ### Before Bootstrap, we must Wireframe/Mock Up
 
 Before you actually start coding your website design, it is important to create a sketch of what you want your website design to look like. The reason that this is important is because of the potential cost that a misplaced design or a redesign can have on the development of the user interface. It is best practice to follow this workflow below:
@@ -103,11 +110,15 @@ Before you actually start coding your website design, it is important to create 
 
 ## Styling with Bootstrap:
 
+<br>
+
 ### Navbar Styling:
 
 Although the tutorial video was cut off short, you can look over the documentation for boostrap navbars [here](https://getbootstrap.com/docs/5.1/components/navbar/).
 
 There is also sources online explaining different ways to style with Bootstrap navbar components [here](https://www.youtube.com/results?search_query=bootstrap+navbar)
+
+<br>
 
 ### [Grid Layouts:](https://getbootstrap.com/docs/5.1/layout/grid/)
 
@@ -150,6 +161,7 @@ In bootstrap, there are 12 columns that make up the width of the screen. The num
 ```
 
 <blockquote>For more info on columns, visit <a href="https://getbootstrap.com/docs/5.1/layout/columns/">this page</a></blockquote>
+<br>
 <br>
 
 ### Responsive Columns:
@@ -216,6 +228,8 @@ With these classes, we achieve the desired responsive effect of 4 columns => 3 c
 </div>
 ```
 
+<br><br>
+
 ### [Containers in Bootstrap:](https://getbootstrap.com/docs/5.1/layout/containers/)
 
 Containers are used often when implementing components or layouts from the bootstrap library. When working with grids, it is a <strong>requirement</strong> to use containers when working with the bootstrap grid layout.
@@ -242,7 +256,88 @@ When encompassing your grid layout in a <code>div</code> element with the class 
 <br>
 
 <blockquote><strong>Note:</strong> the <code>container-fluid</code> class ignores the responsive breakpoints and just takes 100% of the screen width at all times.</blockquote>
+<br><br>
 
 ### [Buttons](https://getbootstrap.com/docs/5.1/components/buttons/) and [Fonts:](https://fontawesome.com/)
 
 You can view the bootstrap documentation to understand more about the syntax for implementing buttons in your web designs. What I wish to understand better is how to customize bootstrap classes. The answer to that lies in using SASS or SCSS to override the SASS rules that make up the bootstrap library. [This](https://www.youtube.com/playlist?list=PL2CB1F80266E986EA) tutorial playlist should be helpful in understand how to use Sass. Also, there is [this](https://www.youtube.com/watch?v=nCX3QVl_PiI) tutorial by The Net Ninja that goes over how to override Bootstrap styles with custom Sass styling.
+<br><br>
+
+### [Carousel](https://getbootstrap.com/docs/5.1/components/carousel/)
+
+Carousels are a Bootstrap component that allows for your user to flip through multiple screens of information on one screen. This bootstrap component will require that you have the bootstrapp javascript bundle imported or installed in your project directory. There are several examples that you can view in the bootstrap documentation, but here a couple of key implementations:
+
+<strong>With Slides:</strong>
+
+```
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background: blue; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" style="background: red; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item bg-green" style="background: green; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+```
+
+<strong>With Controls:</strong>
+
+```
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background: blue; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" style="background: red; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item bg-green" style="background: green; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+```
+
+<strong>With Indicators:</strong>
+
+```
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background: blue; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" style="background: red; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item bg-green" style="background: green; height: 100vh; weight: 100vw;">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+```
