@@ -118,11 +118,18 @@ body {
 }
 
 /*== Testimonial Section ==*/
-#testimonials-carousel {
-  padding: 7% 10%;
+#testimonials {
   text-align: center;
   background-color: rgb(19, 0, 104);
   color: #fff;
+}
+
+.carousel-indicators {
+  margin-top: 10px;
+}
+
+.carousel-item {
+  padding: 7% 10%;
 }
 
 .testimonial-text p {
@@ -228,6 +235,12 @@ body {
   .non-mover {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-indicators {
+    display: none;
   }
 }
 
