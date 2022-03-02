@@ -82,8 +82,10 @@ body {
 
 /*== Features Section ==*/
 #features {
+  /* height: 50vh; */
   background-color: #fff;
   color: #000;
+  padding: 8% 0;
 }
 
 .feature-card {
@@ -122,6 +124,7 @@ body {
   text-align: center;
   background-color: rgb(19, 0, 104);
   color: #fff;
+  padding: 5% 0;
 }
 
 .carousel-indicators {
@@ -183,8 +186,8 @@ body {
   width: 100%;
   left: -120%;
   /* border: 1px solid red; */
-  animation: pressLogo 8s linear infinite;
-  animation-delay: 4s;
+  animation: pressLogo 12s linear infinite;
+  animation-delay: 6s;
 }
 .mover-2 {
   position: relative;
@@ -192,7 +195,7 @@ body {
   width: 100%;
   left: -220%;
   /* border: 1px solid blue; */
-  animation: pressLogo 8s linear infinite;
+  animation: pressLogo 12s linear infinite;
 }
 
 .non-mover {
@@ -211,6 +214,29 @@ body {
   vertical-align: middle;
   width: 100px;
   margin: 1rem 3rem;
+}
+
+/*== Product Section ==*/
+#products {
+  padding: 5% 0;
+}
+
+#products .container {
+  padding: 3% 10%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
+}
+
+.card-img-top {
+  height: 220px;
+}
+
+.btn-price {
+  width: 100%;
 }
 
 /* Override media queries */
@@ -236,6 +262,22 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .card-img-top {
+    height: 100%;
+  }
+
+  .row {
+    grid-gap: 2rem;
+  }
+
+  /* .card-body a {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  } */
 }
 
 @media screen and (max-width: 700px) {

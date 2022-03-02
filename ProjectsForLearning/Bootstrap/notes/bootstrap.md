@@ -341,3 +341,9 @@ Carousels are a Bootstrap component that allows for your user to flip through mu
   </button>
 </div>
 ```
+
+<br><br>
+
+### [Card](https://getbootstrap.com/docs/5.1/components/card/)
+
+Here you can view the documentation to see different card implementations offered by Bootstrap 5. You can also visit <a href="https://bootsnipp.com/">Bootsnipp</a> to view some community implementations of bootstrap components for inspiration.
