@@ -262,6 +262,10 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
+
+  .card {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -271,6 +275,10 @@ body {
 
   .row {
     grid-gap: 2rem;
+  }
+
+  .card {
+    margin-top: 0;
   }
 
   /* .card-body a {
