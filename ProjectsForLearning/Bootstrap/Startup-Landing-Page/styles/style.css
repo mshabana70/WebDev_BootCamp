@@ -221,8 +221,14 @@ body {
   padding: 5% 0;
 }
 
-#products .container {
+#products .container-fluid {
   padding: 3% 10%;
+  text-align: center;
+}
+
+#products .container-fluid h1 {
+  padding-bottom: 5%;
+  font-weight: bold;
 }
 
 .card:hover {
@@ -236,6 +242,7 @@ body {
 }
 
 .btn-price {
+  font-size: 1.2rem;
   width: 100%;
 }
 
