@@ -82,16 +82,16 @@ body {
 
 /*== Features Section ==*/
 #features {
-  /* height: 50vh; */
+  position: relative;
   background-color: #fff;
   color: #000;
   padding: 8% 0;
+  z-index: 1;
 }
 
 .feature-card {
   padding: 3% 5%;
   text-align: center;
-  z-index: 1;
 }
 
 .feature-card:hover {
