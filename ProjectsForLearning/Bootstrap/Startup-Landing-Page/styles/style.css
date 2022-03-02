@@ -299,6 +299,14 @@ body {
   .carousel-indicators {
     display: none;
   }
+
+  .title-text {
+    text-align: center;
+  }
+
+  .title-text .download-button {
+    font-size: 1.1rem;
+  }
 }
 
 /* Custom Animations */
