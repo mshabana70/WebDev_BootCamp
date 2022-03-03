@@ -247,6 +247,26 @@ body {
 }
 
 /* Contact Section */
+#more-info {
+  background-color: rgb(19, 0, 104);
+  color: #fff;
+}
+
+#more-info .container-fluid .row {
+  justify-content: center;
+}
+
+.contact-form {
+  background-color: rgb(33, 37, 41);
+  border-radius: 5px;
+  padding: 5% 2%;
+}
+
+.contact-form .btn {
+  display: block;
+  width: 30%;
+  margin: 5% auto 0;
+}
 
 /* Override media queries */
 @media screen and (max-width: 990px) {
