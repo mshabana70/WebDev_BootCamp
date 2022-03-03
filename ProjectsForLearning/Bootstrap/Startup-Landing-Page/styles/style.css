@@ -257,21 +257,26 @@ body {
   color: #fff;
 }
 
+#more-info .container-fluid {
+  padding-bottom: 5%;
+}
+
 #more-info .container-fluid .row {
   justify-content: center;
+  /* padding-bottom: 5%; */
 }
 
 #more-info h1 {
   text-align: center;
   font-size: var(--header-font);
   font-weight: bold;
-  padding-bottom: 5%;
+  padding: 3%;
 }
 
 .contact-form {
   background-color: rgb(33, 37, 41);
   border-radius: 5px;
-  padding: 4% 2%;
+  padding: 4%;
 }
 
 .contact-form .btn {
@@ -280,7 +285,31 @@ body {
   margin: 5% auto 0;
 }
 
+/* Footer Section */
+#footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
 
+#footer .row {
+  justify-content: center;
+  text-align: center;
+}
+
+#footer a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#footer a:hover {
+  color: #ccc;
+}
+
+#footer p {
+  font-size: 0.8rem;
+  padding: 5% 0 0;
+}
 
 /* Override media queries */
 @media screen and (max-width: 990px) {
