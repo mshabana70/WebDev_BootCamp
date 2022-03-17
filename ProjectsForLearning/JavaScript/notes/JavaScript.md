@@ -50,3 +50,23 @@ Java vs Javascript? What is their relationship?
         </ul>
     </li>
 </ul>
+
+## JavaScript tools in Chrome
+
+### Console
+
+If you go to your chrome browser, in the top navigation bar under View -> Developer -> Javascript Console, this takes you to the built-in chrome console window where you can test out single lines of javascript at a time. This is great for testing but may not be ideal for testing full programs that require multiple lines of code.
+
+<img src="./img/js-chrome-console.png">
+<br>
+
+### Source
+
+Opposed to the console, the source tab allows for us to create snippets of code within the chrome browser directly. This is a better option than the console if we wish to test out multiple lines of code on the web browser.
+
+<blockquote>Note: Javascript is an interpreter language, so your file will run until it strikes a line that throws an error or exception.</blockquote>
+
+<img src="./img/js-chrome-snippet.png">
+<br>
+
+
