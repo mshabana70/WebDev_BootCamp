@@ -4,13 +4,13 @@
 
 ## JavaScript Origins
 
-### History
+### History:
 
 The beginning of Javascript came about around the time that the popular 90's internet browser declined in popularity. Netscape envisioned a world where instead of webpages staying as static HTML pages where all calculations, animations and business logic was handled on servers and then returned to the browser for rendering. Netscape saw the need for dynamic webpages where user can interact with the webpage and recieve feedback in real-time. So Netscape contracted [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) to create a programming language that would add functionality to webpages, all while being simple enough for non-programmers to handle the language. Internet lore says that it took Brendan 10 days to create the Javascript language.
 
 In fact, when javascript was first created, it was called "LiveScript". Then Microsoft felt the need to reverse engineer the language and come up with their own version called "JScript." This led to multiple versions of the Javascript language running on the web. So Europeans tried to standardize the language and created a standard called "ECMAScript," which is what is widely used today. There have been several versions of ECMAScript released, which is what we know as ES5, ES6, ES7 and so on.
 
-### Common Questions
+### Common Questions:
 
 What does the "Script" in Javascript mean?
 
@@ -53,14 +53,14 @@ Java vs Javascript? What is their relationship?
 
 ## JavaScript tools in Chrome
 
-### Console
+### Console:
 
 If you go to your chrome browser, in the top navigation bar under View -> Developer -> Javascript Console, this takes you to the built-in chrome console window where you can test out single lines of javascript at a time. This is great for testing but may not be ideal for testing full programs that require multiple lines of code.
 
 <img src="./img/js-chrome-console.png">
 <br>
 
-### Source
+### Source:
 
 Opposed to the console, the source tab allows for us to create snippets of code within the chrome browser directly. This is a better option than the console if we wish to test out multiple lines of code on the web browser.
 
@@ -69,4 +69,23 @@ Opposed to the console, the source tab allows for us to create snippets of code 
 <img src="./img/js-chrome-snippet.png">
 <br>
 
+## JavaScript Structure
 
+### Commands:
+
+<img src="./img/js-message-struc.png">
+
+- Function: keyword that can be predefined or custom that allows for some form of behavior
+- Message: In this case, the message is what is displayed in the pop up window. But in another scenario, the message can be a parameter or input for another behavior.
+- End: The end of the javascript line of code.
+
+### How to write your JavaScript:
+
+There are many different ways to write your code in JS. But if you wish to adhere to syntax that is widely accepted and adopted by many JavaScript professionials, than you should visit [this repo](https://github.com/rwaldron/idiomatic.js). This is a helpful reference for those starting out, as well as those that are more advanced and need a refresher on best JS syntax practices.
+<br>
+
+## JavaScript Data Types
+
+### String:
+
+Strings are a data type is defined by the double quotes (""). Any text that is within those double quotes will be stored as a <strong>string</strong> data type by your text editor and web browser.
