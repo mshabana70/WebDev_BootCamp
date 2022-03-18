@@ -104,4 +104,4 @@ Using the <code>typeof()</code> command returns the data type of whatever parame
 
 ## JavaScript Variables
 
-
+In programming, we often repeat information several times throughout our program. Rather than repeat pieces of data everytime we wish to use the data, programmers use this thing called <strong>Variables</strong>.
