@@ -1,0 +1,4 @@
+/* Grab all functionality from tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
