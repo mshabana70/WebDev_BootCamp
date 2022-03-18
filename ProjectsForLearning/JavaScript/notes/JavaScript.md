@@ -75,9 +75,9 @@ Opposed to the console, the source tab allows for us to create snippets of code 
 
 <img src="./img/js-message-struc.png">
 
-- Function: keyword that can be predefined or custom that allows for some form of behavior
-- Message: In this case, the message is what is displayed in the pop up window. But in another scenario, the message can be a parameter or input for another behavior.
-- End: The end of the javascript line of code.
+- <strong>Function:</strong> keyword that can be predefined or custom that allows for some form of behavior
+- <strong>Message:</strong> In this case, the message is what is displayed in the pop up window. But in another scenario, the message can be a parameter or input for another behavior.
+- <strong>End:</strong> The end of the javascript line of code.
 
 ### How to write your JavaScript:
 
@@ -88,7 +88,7 @@ There are many different ways to write your code in JS. But if you wish to adher
 
 ### String:
 
-Strings are a data type is defined by the double quotes (""). Any text that is within those double quotes will be stored as a <strong>string</strong> data type by your text editor and web browser. It is called a string because it is a "string" of characters.
+Strings are a data type defined by the double quotes (""). Any text that is within those double quotes will be stored as a <strong>string</strong> data type by your text editor and web browser. It is called a string because it is a "string" of characters.
 
 ### Numbers:
 
@@ -101,3 +101,7 @@ Boolean is a binary data type that represents two values, true or false, 0 or 1,
 ### Typeof:
 
 Using the <code>typeof()</code> command returns the data type of whatever parameter is entered. This useful in debugging and testing your code.
+
+## JavaScript Variables
+
+
