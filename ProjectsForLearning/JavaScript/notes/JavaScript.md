@@ -6,7 +6,7 @@
 
 ### History:
 
-The beginning of Javascript came about around the time that the popular 90's internet browser declined in popularity. Netscape envisioned a world where instead of webpages staying as static HTML pages where all calculations, animations and business logic was handled on servers and then returned to the browser for rendering. Netscape saw the need for dynamic webpages where user can interact with the webpage and recieve feedback in real-time. So Netscape contracted [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) to create a programming language that would add functionality to webpages, all while being simple enough for non-programmers to handle the language. Internet lore says that it took Brendan 10 days to create the Javascript language.
+The beginning of Javascript came about around the time that the popular 90's internet browser declined in popularity. Netscape envisioned a world where instead of webpages staying as static HTML pages where all calculations, animations and business logic was handled on servers and then returned to the browser for rendering. Netscape saw the need for dynamic webpages where users can interact with the webpage and recieve feedback in real-time. So Netscape contracted [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) to create a programming language that would add functionality to webpages, all while being simple enough for non-programmers to handle the language. Internet lore says that it took Brendan 10 days to create the Javascript language.
 
 In fact, when javascript was first created, it was called "LiveScript". Then Microsoft felt the need to reverse engineer the language and come up with their own version called "JScript." This led to multiple versions of the Javascript language running on the web. So Europeans tried to standardize the language and created a standard called "ECMAScript," which is what is widely used today. There have been several versions of ECMAScript released, which is what we know as ES5, ES6, ES7 and so on.
 
@@ -64,7 +64,7 @@ If you go to your chrome browser, in the top navigation bar under View -> Develo
 
 Opposed to the console, the source tab allows for us to create snippets of code within the chrome browser directly. This is a better option than the console if we wish to test out multiple lines of code on the web browser.
 
-<blockquote>Note: Javascript is an interpreter language, so your file will run until it strikes a line that throws an error or exception.</blockquote>
+<blockquote>Note: Javascript is an interpreter language, so your file will run code line by line until it strikes a line that throws an error or exception.</blockquote>
 
 <img src="./img/js-chrome-snippet.png">
 <br>
