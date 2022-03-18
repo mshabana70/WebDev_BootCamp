@@ -88,4 +88,16 @@ There are many different ways to write your code in JS. But if you wish to adher
 
 ### String:
 
-Strings are a data type is defined by the double quotes (""). Any text that is within those double quotes will be stored as a <strong>string</strong> data type by your text editor and web browser.
+Strings are a data type is defined by the double quotes (""). Any text that is within those double quotes will be stored as a <strong>string</strong> data type by your text editor and web browser. It is called a string because it is a "string" of characters.
+
+### Numbers:
+
+Numbers are integers that are stored as a number data type.
+
+### Boolean:
+
+Boolean is a binary data type that represents two values, true or false, 0 or 1, yes or no.
+
+### Typeof:
+
+Using the <code>typeof()</code> command returns the data type of whatever parameter is entered. This useful in debugging and testing your code.
