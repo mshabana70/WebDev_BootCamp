@@ -105,3 +105,15 @@ Using the <code>typeof()</code> command returns the data type of whatever parame
 ## JavaScript Variables
 
 In programming, we often repeat information several times throughout our program. Rather than repeat pieces of data everytime we wish to use the data, programmers use this thing called <strong>Variables</strong>.
+
+### Var:
+
+<code>var</code> is the keyword used to define a variable (or a container for our data).
+
+<img src="./img/js-variables-var.png">
+
+Everytime the computer (or the interpreter to be more specific) comes across the keyword "var", it creates a new container or new box with the label we assign after the keyword. Whatever is after the "=" is placed inside the variable with the data type along with it (in the example image, that is a data type of string).
+
+<blockquote>Note: The neat thing about "var" is that you can change the variable value once it has been instantiated.</blockquote>
+
+###
