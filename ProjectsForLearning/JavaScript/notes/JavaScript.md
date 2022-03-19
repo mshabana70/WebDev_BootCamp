@@ -116,4 +116,10 @@ Everytime the computer (or the interpreter to be more specific) comes across the
 
 <blockquote>Note: The neat thing about "var" is that you can change the variable value once it has been instantiated.</blockquote>
 
-###
+### Naming Convention:
+
+It is important to be consistent with how we name our variables for best coding practices. It is best practice to give meaningful names to our variables, here are some examples:
+
+- <strong>carColor</strong>: variable name for the color of a car.
+- <strong>baseFontSize</strong>: variable name for size of our base font.
+- <strong>numOfLives</strong>: variable name for the number of lives for a video game character.
