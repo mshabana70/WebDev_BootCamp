@@ -123,3 +123,9 @@ It is important to be consistent with how we name our variables for best coding 
 - <strong>carColor</strong>: variable name for the color of a car.
 - <strong>baseFontSize</strong>: variable name for size of our base font.
 - <strong>numOfLives</strong>: variable name for the number of lives for a video game character.
+
+## Javascript Methods
+
+### Length:
+
+The length method return the number of characters that are contained inside the variable. It is important to remember that this is only valid for variables with a <em>string</em> data type.
