@@ -15,8 +15,7 @@ function test() {
     
 /***********Do not change the code above 👆*******/
 //Write your code on lines 7 - 9:
-var temp = 0;
-temp = a;
+var temp = a;
 a = b;
 b = temp;
 
