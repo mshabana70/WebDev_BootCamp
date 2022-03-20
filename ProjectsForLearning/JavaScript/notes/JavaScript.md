@@ -124,6 +124,18 @@ It is important to be consistent with how we name our variables for best coding 
 - <strong>baseFontSize</strong>: variable name for size of our base font.
 - <strong>numOfLives</strong>: variable name for the number of lives for a video game character.
 
+## Javascript Arithmetic
+
+### Modulo:
+
+This is the more complicated form of arithmetic is javascript. The basic concept of this operator is that it returns the <strong>remainder</strong> of the expression. For example:
+
+```
+var a = 9 % 6; // Output: 3
+var b = 10 % 3; // Output: 1
+var c = 15 % 3; // Output: 0
+```
+
 ## Javascript Methods (Strings)
 
 ### Length:
@@ -133,10 +145,10 @@ The length method return the number of characters that are contained inside the 
 Example:
 
 ```
+
 // Calculate num of characters left in a tweet
 var message = prompt("Please past a message/tweet: ");
 var messageLimit = 280;
-
 
 // Code goes here for concatenation
 alert("You have entered " + message.length + " characters and you have " + (messageLimit - message.length) + " characters left!");
@@ -148,6 +160,7 @@ alert("You have entered " + message.length + " characters and you have " + (mess
 The <code>slice(x, y)</code> method does what the name implies, it slices strings into individual or segments of characters. The parameters of this method takes in the index of the characters we wish to slice. The first parameter (x) is the starting index, with the following parameter (y) being the last index of the slice you wish to retrieve. Lets look at an example:
 
 ```
+
 // Here is our string variable
 var name = "Mahmoud Shabana";
 
@@ -159,6 +172,7 @@ var secondHalf = name.slice(8, name.length);
 // display slice
 console.log(firstLetter);
 console.log(secondHalf);
+
 ```
 
 <br>
@@ -166,15 +180,16 @@ console.log(secondHalf);
 Revising our Twitter Example from earlier:
 
 ```
+
 // Whenever you exceed the character limit, slice the message at the character limit
 
 // Calculate num of characters left in a tweet
 var message = prompt("Please past a message/tweet: ");
 var messageLimit = 280;
 
-
 // Code goes here for concatenation
 alert("Your message:\n" + message.slice(0, messageLimit) + "\n\nYou have entered " + message.length + " characters and you have " + (messageLimit - message.length) + " characters left!");
+
 ```
 
 ### toUpperCase/toLowerCase:
@@ -184,6 +199,7 @@ This changes all the characters in a string to uppercase casing (and vice versa)
 Example:
 
 ```
+
 var name = "Mahmoud";
 name.toUpperCase(); // Output: MAHMOUD
 
@@ -192,6 +208,7 @@ console.log(name); // Output: Mahmoud
 name = name.toLowerCase();
 
 console.log(name); // Output: mahmoud
+
 ```
 
 <br>
@@ -199,6 +216,7 @@ console.log(name); // Output: mahmoud
 Coding Challenge:
 
 ```
+
 // Change inputs to capitalized using only what we learned
 
 //1 Create a var that stores the user inputted name
@@ -215,4 +233,7 @@ name = firstLetter + restOfName;
 
 //5 Print/return capitalized name
 alert("Hello, " + name);
+
+```
+
 ```
