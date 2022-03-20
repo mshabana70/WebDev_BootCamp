@@ -200,11 +200,19 @@ Coding Challenge:
 
 ```
 // Change inputs to capitalized using only what we learned
+
+//1 Create a var that stores the user inputted name
 var name = prompt("Please enter your name (any format is fine): ");
+
+//2 Capitalize the first letter of their name
 var firstLetter = name.slice(0, 1).toUpperCase();
+
+//3 Set rest of name to lowercase
 var restOfName = name.slice(1, name.length).toLowerCase();
 
+//4 Concatenate the capitalized first letter and rest of name
 name = firstLetter + restOfName;
 
+//5 Print/return capitalized name
 alert("Hello, " + name);
 ```
