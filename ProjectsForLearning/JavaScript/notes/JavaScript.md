@@ -165,6 +165,14 @@ x++; // x = 6
 x--; // x = 5
 ```
 
+<blockquote>Note: This increment/decrement expressions are computed at the end of the line of code. So in this example:
+```
+var x = 3;
+var y = x++;
+```
+The value of y will be 3. This is because the assignment operator is evaluated <strong>before</strong> the x variable is incremented.
+</blockquote>
+
 Now say you want to increment/decrement more than one. You can use the "+=" or "-=" operators to increase numerical values by more than one or by another numerical variable:
 
 ```
