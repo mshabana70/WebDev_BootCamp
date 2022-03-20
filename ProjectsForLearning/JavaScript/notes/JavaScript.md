@@ -144,6 +144,7 @@ In programming, there is an overall rule called <em>precedence</em>. This rule i
 var cost = 3 + 5 * 2; // Output: 3 + (10) = 13
 var cost2 = 3 + (5 * 2) // Same output
 ```
+
 <br>
 <blockquote>Note: You can use parenthesis to help target part of the expression to be computed first.</blockquote>
 
@@ -164,22 +165,33 @@ x++; // x = 6
 x--; // x = 5
 ```
 
+Now say you want to increment/decrement more than one. You can use the "+=" or "-=" operators to increase numerical values by more than one or by another numerical variable:
+
+```
+var x = 5;
+x += 3; // x = 8
+x -= 5; // x = 3
+
+var y = 10;
+x += y; // x = 13 (3 += 10 => 13)
+```
 
 ### Arthmetic Challenge:
 
 Here, the challenge is to calculate how old a dog would be in human years. Here is my approach to the solution:
 
 ```
+
 // Ask for the dogs age
 var dogAge = prompt("Please enter the age of your dog: ");
 
 // Calculate the dogs age
-var humanAge = ((dogAge - 2) * 4) + 21;
+var humanAge = ((dogAge - 2) \* 4) + 21;
 
 // Return the human age of the dog
 alert("Your dog is " + humanAge + " years old in human years!");
-```
 
+```
 
 ## Javascript Methods (Strings)
 
@@ -278,6 +290,8 @@ name = firstLetter + restOfName;
 
 //5 Print/return capitalized name
 alert("Hello, " + name);
+
+```
 
 ```
 
