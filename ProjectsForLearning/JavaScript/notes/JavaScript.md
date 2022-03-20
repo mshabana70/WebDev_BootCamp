@@ -156,6 +156,13 @@ var x = 5;
 x = x + 1; // x = 6
 ```
 
+In programming, there is the increment and decrement expressions to help simply this process:
+
+```
+var x = 5;
+x++; // x = 6
+x--; // x = 5
+```
 
 
 ### Arthmetic Challenge:
