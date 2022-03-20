@@ -176,3 +176,20 @@ var messageLimit = 280;
 // Code goes here for concatenation
 alert("Your message:\n" + message.slice(0, messageLimit) + "\n\nYou have entered " + message.length + " characters and you have " + (messageLimit - message.length) + " characters left!");
 ```
+
+### toUpperCase:
+
+This changes all the characters in a string to uppercase casing. This can be useful in formatting in web pages as well as formatting in applications in general. It is important to note that this method does not change the casing of the variable it is acting on, it simply prints out the string variable in uppercase. To change the casing permanently, you must reassign the variable with the output of this method.
+
+Example:
+
+```
+var name = "Mahmoud";
+name.toUpperCase(); // Output: MAHMOUD
+
+console.log(name); // Output: Mahmoud
+
+name = name.toUpperCase();
+
+console.log(name); // Output: MAHMOUD
+```
