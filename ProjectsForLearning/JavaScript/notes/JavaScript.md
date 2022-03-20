@@ -149,4 +149,14 @@ The <code>slice</code> method does what the name implies, it slices strings into
 
 ```
 // Here is our string variable
+var name = "Mahmoud Shabana";
+
+// I want to extract the first character of the string:
+var firstLetter = name.slice(0, 1); // slice from the 0 index to index 1 exclusive (not including the character in index 1)
+// I want to extract second half of name:
+var secondHalf = name.slice(8, name.length);
+
+// display slice
+console.log(firstLetter);
+console.log(secondHalf);
 ```
