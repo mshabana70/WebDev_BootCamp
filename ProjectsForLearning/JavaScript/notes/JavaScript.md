@@ -136,6 +136,17 @@ var b = 10 % 3; // Output: 1
 var c = 15 % 3; // Output: 0
 ```
 
+### Order of Operations:
+
+In programming, there is an overall rule called <em>precedence</em>. This rule is similar to the rule we all used to follow called PEMDAS, where multiplication and division have "precendence" over addition and subtraction. For example:
+
+```
+var cost = 3 + 5 * 2; // Output: 3 + (10) = 13
+var cost2 = 3 + (5 * 2) // Same output
+```
+<br>
+<blockquote>Note: You can use parenthesis to help target part of the expression to be computed first.</blockquote>
+
 ## Javascript Methods (Strings)
 
 ### Length:
