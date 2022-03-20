@@ -147,6 +147,17 @@ var cost2 = 3 + (5 * 2) // Same output
 <br>
 <blockquote>Note: You can use parenthesis to help target part of the expression to be computed first.</blockquote>
 
+### Increment/Decrement:
+
+When looking to increment/decrement numerical data types, most would think to add one to the variable, then restate the value of the original variables as such:
+
+```
+var x = 5;
+x = x + 1; // x = 6
+```
+
+
+
 ### Arthmetic Challenge:
 
 Here, the challenge is to calculate how old a dog would be in human years. Here is my approach to the solution:
