@@ -177,9 +177,9 @@ var messageLimit = 280;
 alert("Your message:\n" + message.slice(0, messageLimit) + "\n\nYou have entered " + message.length + " characters and you have " + (messageLimit - message.length) + " characters left!");
 ```
 
-### toUpperCase:
+### toUpperCase/toLowerCase:
 
-This changes all the characters in a string to uppercase casing. This can be useful in formatting in web pages as well as formatting in applications in general. It is important to note that this method does not change the casing of the variable it is acting on, it simply prints out the string variable in uppercase. To change the casing permanently, you must reassign the variable with the output of this method.
+This changes all the characters in a string to uppercase casing (and vice versa). This can be useful in formatting in web pages as well as formatting in applications in general. It is important to note that this method does not change the casing of the variable it is acting on, it simply prints out the string variable in uppercase. To change the casing permanently, you must reassign the variable with the output of this method.
 
 Example:
 
@@ -189,7 +189,22 @@ name.toUpperCase(); // Output: MAHMOUD
 
 console.log(name); // Output: Mahmoud
 
-name = name.toUpperCase();
+name = name.toLowerCase();
 
-console.log(name); // Output: MAHMOUD
+console.log(name); // Output: mahmoud
+```
+
+<br>
+
+Coding Challenge:
+
+```
+// Change inputs to capitalized using only what we learned
+var name = prompt("Please enter your name (any format is fine): ");
+var firstLetter = name.slice(0, 1).toUpperCase();
+var restOfName = name.slice(1, name.length).toLowerCase();
+
+name = firstLetter + restOfName;
+
+alert("Hello, " + name);
 ```
