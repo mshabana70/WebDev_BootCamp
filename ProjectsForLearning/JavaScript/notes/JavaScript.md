@@ -301,3 +301,7 @@ alert("Hello, " + name);
 
 ```
 
+## Javascript Functions
+
+
+
