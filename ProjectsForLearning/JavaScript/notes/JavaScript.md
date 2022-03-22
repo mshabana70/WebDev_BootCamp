@@ -303,5 +303,5 @@ alert("Hello, " + name);
 
 ## Javascript Functions
 
-
+A very important concept in all programming languages. A function is a series of instructions packaged into a block of code that can be reused whenever you need those series of instructions to be executed. This makes reusing code increasingly simple when your are working with larger scripts of code.
 
