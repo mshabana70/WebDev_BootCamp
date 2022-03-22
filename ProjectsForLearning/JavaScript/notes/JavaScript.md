@@ -309,6 +309,7 @@ A very important concept in all programming languages. A function is a series of
 
 Below you can reference the syntax you need to create a function in javascript:
 <br>
+
 ```
 function myFunc() {
     // whatever instructions of code you want here
@@ -319,6 +320,14 @@ function myFunc() {
 
 ### Calling a function:
 
+When calling a function, you simply write the name of the function and the parameters that were created when you instantiated the function. Based on the example from before, calling a function would look something like this:
+<br>
 
+```
+// Calling the function 'myFunc'
+myFunc(); // executes code inside myFunc()
 
-
+/** Output:
+*   Mahmoud Shabana says hello from his function!
+*/
+```
