@@ -305,3 +305,20 @@ alert("Hello, " + name);
 
 A very important concept in all programming languages. A function is a series of instructions packaged into a block of code that can be reused whenever you need those series of instructions to be executed. This makes reusing code increasingly simple when your are working with larger scripts of code.
 
+### Creating a function:
+
+Below you can reference the syntax you need to create a function in javascript:
+<br>
+```
+function myFunc() {
+    // whatever instructions of code you want here
+    var name = "Mahmoud Shabana";
+    alert(name + " says hello from his function!");
+}
+```
+
+### Calling a function:
+
+
+
+
