@@ -11,7 +11,7 @@ myFunc();
 
 // Function for robot getting milk
 function getMilk() {
-    console.log("'GOING TO GET MILK BEEP BOOP!'")
+    console.log("'BEEP BOOP GOING TO GET MILK BOOP BEEP!'")
     console.log("leaveHouse");
     console.log("moveRight");
     console.log("moveRight");
