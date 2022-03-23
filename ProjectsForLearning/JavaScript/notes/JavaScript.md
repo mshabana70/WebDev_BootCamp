@@ -366,3 +366,5 @@ function numOfCandy(amountOfMoney) {
 var money = 20;
 console.log("You can buy " + numOfCandy(money) + " pieces of candy with $" + money + " dollars!");
 ```
+
+This function here will take the remainder of the money you have and the cost of the candy. The remainder is subtracted from the total amount of money and divided by the cost of candy. You could have used the floor() method to round down the quotient of the money you have and the price of piece of candy. BUT that is no fun at all!
