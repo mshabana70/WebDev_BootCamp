@@ -331,3 +331,7 @@ myFunc(); // executes code inside myFunc()
 *   Mahmoud Shabana says hello from his function!
 */
 ```
+
+### Creating a function with Parameters:
+
+In the examples above, we were creating functions that executed the same block of code everytime it was called, with the same output expected each time. What if we wanted to specify an input to our function to allow for a more specific execution of the code depending on what we input? This is where function parameters come into play. With parameters, we can pass in specifc values to be used within our function, creating more unique execution of the code.
