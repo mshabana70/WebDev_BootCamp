@@ -368,3 +368,46 @@ console.log("You can buy " + numOfCandy(money) + " pieces of candy with $" + mon
 ```
 
 This function here will take the remainder of the money you have and the cost of the candy. The remainder is subtracted from the total amount of money and divided by the cost of candy. You could have used the floor() method to round down the quotient of the money you have and the price of piece of candy. BUT that is no fun at all!
+
+### Nesting Functions:
+
+Taking what we learned in our previous sections, we can create more complicated functions that help us execute commands more seemlessly. Lets refactor the previous challenge above:
+<br>
+
+```
+function numOfCandy(amountOfMoney, costOfMoney) {
+    const result = (amountOfMoney - (amountOfMoney % costOfCandy)) / costOfCandy;
+
+    return result;
+}
+```
+
+By creating two parameters, we can pass in different values for the amount of money we have, and how much each piece of candy will cost.
+<br>
+We can also call functions within functions to execute more instructions without repeating code. Lets look at this example:
+
+```
+function tripToCandyStore(money) {
+    console.log("Today I got $" + money + " dollars in allowance and want to go to the candy store!");
+    console.log("There are two types of candy I can get, chocolate or caramel.");
+
+    var chocolatePrice = 1.50;
+    var caramelPrice = 2.50;
+    console.log("The price of chocolate is $" + chocolatePrice + " a piece and caramel is $" + caramelPrice + " a piece");
+
+    var chocolateAmount = numOfCandy(money, chocolatePrice);
+    var caramelAmount = numOfCandy(money, caramelPrice);
+
+    console.log("With $" + money + " dollars, I can get " + chocolateAmount + " pieces of chocolate or " + caramelAmount + " pieces of caramel.");
+}
+
+function numOfCandy(amountOfMoney, costOfMoney) {
+    const result = (amountOfMoney - (amountOfMoney % costOfCandy)) / costOfCandy;
+
+    return result;
+}
+
+tripToCandyStore(30);
+```
+
+Here we can use the <code>numOfCandy()</code> function calculates the amount of candy we instantiated within the <code>tripToCandyStore()</code> function. This helps our code stay DRY (Don't Repeat Yourself).
