@@ -351,3 +351,18 @@ getCandyPrice(5); // Output: 2.50
 ```
 
 Based on the example above, we can calculate the price a bag of candy will be with whatever amount of candy we buy, and have the cost be returned using the <code>return</code> keyword. This will work with any amount as long as the price of each piece of candy is the same.
+
+### Code Challenge:
+
+Find the amount of candy you can buy with a specified amount of money. For example, if the candy costs 2 dollars, and you have 13.50, you can only buy 6 pieces of candy. Here is my solution:
+
+```
+function numOfCandy(amountOfMoney) {
+    const costOfCandy = 1.50;
+    const result = (amountOfMoney - (amountOfMoney % costOfCandy)) / costOfCandy;
+
+    return result;
+}
+var money = 20;
+console.log("You can buy " + numOfCandy(money) + " pieces of candy with $" + money + " dollars!");
+```

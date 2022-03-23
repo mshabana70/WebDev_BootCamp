@@ -46,3 +46,13 @@ function getMilkCost(numOfMilk) {
 
 // calling function with parameters
 console.log("Cost of milk is: " + getMilkCost(4));
+
+function numOfCandy(amountOfMoney) {
+    const costOfCandy = 1.50;
+    const result = (amountOfMoney - (amountOfMoney % costOfCandy)) / costOfCandy;
+
+    return result;
+}
+
+var money = 30;
+console.log("You can buy " + numOfCandy(money) + " pieces of candy with $" + money + " dollars!");
