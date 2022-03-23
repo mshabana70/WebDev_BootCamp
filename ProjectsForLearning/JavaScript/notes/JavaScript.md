@@ -350,4 +350,4 @@ getCandyPrice(10); // Output: 5
 getCandyPrice(5); // Output: 2.50
 ```
 
-Based on the example above, we can calculate the price a bag of candy will be with whatever amount of candy we buy, and have the cost be returned using the <code>return</code> . This will work with any amount as long as the price of each piece of candy is the same.
+Based on the example above, we can calculate the price a bag of candy will be with whatever amount of candy we buy, and have the cost be returned using the <code>return</code> keyword. This will work with any amount as long as the price of each piece of candy is the same.
