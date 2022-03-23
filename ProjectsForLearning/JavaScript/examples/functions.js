@@ -35,3 +35,14 @@ function getMilk() {
 
 // call get milk function
 getMilk();
+
+// creating a function with parameters
+function getMilkCost(numOfMilk) {
+    var priceOfMilk = 3.50;
+    var cost = numOfMilk * priceOfMilk;
+
+    return cost;
+}
+
+// calling function with parameters
+console.log("Cost of milk is: " + getMilkCost(4));
