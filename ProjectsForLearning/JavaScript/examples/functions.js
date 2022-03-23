@@ -38,8 +38,8 @@ getMilk();
 
 // creating a function with parameters
 function getMilkCost(numOfMilk) {
-    var priceOfMilk = 3.50;
-    var cost = numOfMilk * priceOfMilk;
+    const priceOfMilk = 3.50;
+    const cost = numOfMilk * priceOfMilk;
 
     return cost;
 }
