@@ -334,4 +334,19 @@ myFunc(); // executes code inside myFunc()
 
 ### Creating a function with Parameters:
 
-In the examples above, we were creating functions that executed the same block of code everytime it was called, with the same output expected each time. What if we wanted to specify an input to our function to allow for a more specific execution of the code depending on what we input? This is where function parameters come into play. With parameters, we can pass in specifc values to be used within our function, creating more unique execution of the code.
+In the examples above, we were creating functions that executed the same block of code everytime it was called, with the same output expected each time. What if we wanted to specify an input to our function to allow for a more specific execution of the code depending on what we input? This is where function parameters come into play. With parameters, we can pass in specifc values to be used within our function, creating more unique execution of the code. Lets take a look at an example:
+<br>
+```
+function getCandyPrice(numOfCandy) {
+    const priceOfCandy = 0.50;
+    const cost = numOfCandy * priceOfCandy;
+
+    return cost;
+}
+
+getCandyPrice(2); // Output: 1
+getCandyPrice(10); // Output: 5
+getCandyPrice(5); // Output: 2.50
+```
+
+Based on the example above, we can calculate the price a bag of candy will be with whatever amount of candy we buy. This will work with any amount as long as the price of each piece of candy is the same.
