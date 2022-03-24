@@ -61,7 +61,7 @@ console.log("You can buy " + numOfCandy(money) + " pieces of candy with $" + mon
 
 // coding exercises
 // calculate your remaining time in days, weeks, months (assuming you live to 90);
-console.log("\n/*************CODING CHALLENGE 2**********/\n");
+console.log("\n/*************CODING CHALLENGE 1**********/\n");
 function lifeInWeeks(age) {
     
 /************Don't change the code above************/    
@@ -111,3 +111,22 @@ function numOfCandy(amountOfMoney, costOfCandy) {
 }
 
 tripToCandyStore(30);
+
+// CODING CHALLENGE 2
+//Create your function below this line.
+//The first parameter should be the weight and the second should be the height.
+console.log("\n/*************CODING CHALLENGE 2**********/\n");
+function bmiCalculator(weight, height) {
+    return Math.round((weight / (height ** 2))); 
+}
+
+
+/* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:*/
+
+var bmi = bmiCalculator(65, 1.8); 
+console.log("Your bmi is " + bmi + " rounded.");
+
+/*
+bmi should equal 20 when it's rounded to the nearest whole number.
+
+*/
