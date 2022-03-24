@@ -49,15 +49,15 @@ function getMilkCost(numOfMilk) {
 console.log("\n/*************FUNCTIONS WITH PARAMETERS**********/\n");
 console.log("Cost of milk is: " + getMilkCost(4));
 
-function numOfCandy(amountOfMoney) {
+function numOfCandy1(amountOfMoney) {
     const costOfCandy = 1.50;
     const result = (amountOfMoney - (amountOfMoney % costOfCandy)) / costOfCandy;
 
     return result;
 }
 
-var money = 30;
-console.log("You can buy " + numOfCandy(money) + " pieces of candy with $" + money + " dollars!");
+var moneys = 30;
+console.log("You can buy " + numOfCandy1(moneys) + " pieces of candy with $" + money + " dollars!");
 
 // coding exercises
 // calculate your remaining time in days, weeks, months (assuming you live to 90);
