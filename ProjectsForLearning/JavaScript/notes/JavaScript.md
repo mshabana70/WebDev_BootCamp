@@ -411,3 +411,4 @@ tripToCandyStore(30);
 ```
 
 Here we can use the <code>numOfCandy()</code> function calculates the amount of candy we instantiated within the <code>tripToCandyStore()</code> function. This helps our code stay DRY (Don't Repeat Yourself).
+
