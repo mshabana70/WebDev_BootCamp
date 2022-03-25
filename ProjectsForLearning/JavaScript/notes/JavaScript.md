@@ -484,5 +484,12 @@ if (number > 5) {
 } else {
     console.log("number is either 1 or 2!");
 }
-
 ```
+
+### Comparators
+
+There are three different ways to check for equality in JavaScript using the "=" sign. 
+
+- "=": This assigns a value to a variable.
+- "==": This compares two values regardless of data types.
+- "===": this compares two values and their datatypes, both must be equal.
