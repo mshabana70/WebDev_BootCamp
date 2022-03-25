@@ -468,4 +468,21 @@ if (number > 5) {
 }
 ```
 
+The term for this is programming is <strong>control flow</strong>. This is because we can literally control the flow of our code depending if certain conditions are met.
+<br>
+You can also check multiple conditions using the <code>else if</code> keyword. Here is another example:
 
+```
+const number = prompt("Give me a number between 1 and 10 inclusive:");
+
+// check if number is greater than 5
+if (number > 5) {
+    console.log("your number is greater than five!");
+} else if (2 < number <= 5) {
+    // check another condition if first condition is not met, run this block of code
+    console.log("number is between 5 and 2!");
+} else {
+    console.log("number is either 1 or 2!");
+}
+
+```
