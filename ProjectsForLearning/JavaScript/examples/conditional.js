@@ -28,3 +28,23 @@ numberGuesser(10);
 numberGuesser(1);
 numberGuesser(30);
 numberGuesser(27);
+
+// CODING CHALLENGE: BMI
+// Code a BMI Calculator using conditionals
+function bmiCalculator (weight, height) {
+    let interpretation = "";
+    var bmi = (weight / (height * height));
+    
+    if (bmi > 24.9) {
+        interpretation = "Your BMI is " + bmi + ", so you are overweight.";
+    } else if ((bmi <= 24.9) && (bmi >= 18.5)) {
+        interpretation = "Your BMI is " + bmi + ", so you have a normal weight.";
+    } else if (bmi < 18.5) {
+        interpretation = "Your BMI is " + bmi + ", so you are underweight.";
+    } else {
+        interpretation = "invalid BMI: " + bmi;
+    }
+    return interpretation;
+}
+
+console.log(bmiCalculator(64, 1.8));
