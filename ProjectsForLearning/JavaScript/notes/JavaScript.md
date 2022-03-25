@@ -493,3 +493,5 @@ There are three different ways to check for equality in JavaScript using the "="
 - "=": This assigns a value to a variable.
 - "==": This compares two values regardless of data types.
 - "===": this compares two values and their datatypes, both must be equal.
+
+There are also ">", "<", ">=", "<=", and "!=".
