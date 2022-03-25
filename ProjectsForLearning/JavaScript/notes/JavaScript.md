@@ -450,3 +450,7 @@ console.log("Between " + firstUser + " and " + secondUser + ", the love connecti
 ```
 
 <blockquote>Note: This should be run in the chrome developer tools due to the <code>prompt()</code> command.</blockquote>
+
+## JavaScript Conditionals 
+
+In programming, when you want to direct certain tasks to execute depending on the current state of a variable or a value, than you should use something called a <strong>conditional  statement</strong>. By evaluating the condition of an expression, you can execute a specific task if its true and other task if it isnt true (or false).

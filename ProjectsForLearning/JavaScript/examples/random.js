@@ -30,3 +30,4 @@ randNum = Math.round(randNum) + 1;
 // return to user
 console.log("Between " + firstUser + " and " + secondUser + ", the love connection is " + randNum + "%!");
 */
+
