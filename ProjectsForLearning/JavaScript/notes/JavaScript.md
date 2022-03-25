@@ -412,3 +412,8 @@ tripToCandyStore(30);
 
 Here we can use the <code>numOfCandy()</code> function calculates the amount of candy we instantiated within the <code>tripToCandyStore()</code> function. This helps our code stay DRY (Don't Repeat Yourself).
 
+## JavaScript Random
+
+### Random():
+
+The random method is a part of the <code>math</code> library. This returns a random 16 placed decimal between 0 and 1. This is helpful in generating a (somewhat) random value for our program to determine a random outcome
