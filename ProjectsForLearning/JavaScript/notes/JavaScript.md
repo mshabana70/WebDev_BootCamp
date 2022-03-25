@@ -424,3 +424,29 @@ const n = Math.random();
 console.log(n);
 
 ```
+
+its important to remember that computers can never be truly random. So this is considered more of a pseudo-random number generator. To learn more about pseudo-random number generator, visit [here](https://www.youtube.com/watch?v=GtOt7EBNEwQ)
+
+### Coding Challenge (Love Calculator):
+
+Lets create a love calculator where we take in two user inputs and calculate the percentage of their "love" using the random method.
+
+```
+console.log("Welcome to the Love Calculator!");
+
+// get user names
+var firstUser = prompt("Enter the first user:");
+var secondUser = prompt("Enter the second user:");
+
+// calulate random love percentage
+var randNum = Math.random();
+
+// set random value between 1 and 100
+randNum *= 100;
+randNum = Math.round(randNum) + 1;
+
+// return to user
+console.log("Between " + firstUser + " and " + secondUser + ", the love connection is " + randNum + "%!");
+```
+
+<blockquote>Note: This should be run in the chrome developer tools due to the <code>prompt()</code> command.</blockquote>
