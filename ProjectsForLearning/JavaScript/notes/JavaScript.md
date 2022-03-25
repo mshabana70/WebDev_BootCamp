@@ -451,6 +451,21 @@ console.log("Between " + firstUser + " and " + secondUser + ", the love connecti
 
 <blockquote>Note: This should be run in the chrome developer tools due to the <code>prompt()</code> command.</blockquote>
 
-## JavaScript Conditionals 
+## JavaScript Conditionals
 
-In programming, when you want to direct certain tasks to execute depending on the current state of a variable or a value, than you should use something called a <strong>conditional  statement</strong>. By evaluating the condition of an expression, you can execute a specific task if its true and other task if it isnt true (or false).
+In programming, when you want to direct certain tasks to execute depending on the current state of a variable or a value, than you should use something called a <strong>conditional statement</strong>. By evaluating the condition of an expression, you can execute a specific task if its true and other task if it isnt true (or false).
+In JavaScript (and most programming languages), you use the <code>if</code> keyword followed by an expression to define a conditional. Here is an example:
+
+```
+const number = prompt("Give me a number between 1 and 10 inclusive:");
+
+// check if number is greater than 5
+if (number > 5) {
+    console.log("your number is greater than five!");
+} else {
+    // if condition is NOT satified, run this block of code
+    console.log("number is less than and equal to five!");
+}
+```
+
+
