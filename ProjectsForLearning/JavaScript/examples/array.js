@@ -95,3 +95,20 @@ for (let i = 1; i <= 100; i++) {
 
 // Show array after it is populated
 console.log(output);
+
+// Code Challenge: Who's Buying Lunch?
+
+// Select a random name from an array of names.
+// This person will be in charge of buying lunch.
+
+let buyers = ["Mahmoud", "Angela", "Adam", "Sarah", "Robert", "Minju"];
+
+function whosPaying(names) {
+    let randomNum = Math.random() * names.length;
+    randomNum = Math.floor(randomNum);
+
+    return names[randomNum];
+}
+
+console.log(whosPaying(buyers));
+console.log(whosPaying(buyers));
