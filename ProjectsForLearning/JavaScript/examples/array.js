@@ -156,7 +156,7 @@ function beerOnTheWall() {
     while (beers >= 0) {
         if (beers != 0) {
             console.log(`${beers} bottles of beer on the wall, ${beers} bottles of beer. Take 1 down, pass it around, ${(beers-1)} bottles of beer on the wall.\n`);
-        } else {
+        } else  {
             console.log(`No more bottles of beer on the wall, No more bottles of beer. Go to the store, buy some more, 99 bottles of beer on the wall.`);
         }
         beers--;
@@ -194,4 +194,8 @@ function fizzBuzzFor() {
 // Now we only need to run fizzBuzz once
 fizzBuzzFor();
 console.log(outputFor);
+
+
+// Fibonacci
+console.log("\n/********* For Loops *********/\n");
 

@@ -581,4 +581,29 @@ It is important to know that while loops are prone to errors. Simple mistakes wi
 
 ### For Loops:
 
-Similar to while loops, for loops are a form of loops that execute code blocks until a condition is met. The benefit of <code>for</code> loops is that it handles incrementing the loop for us.
+Similar to while loops, for loops are a form of loops that execute code blocks until a condition is met. The benefit of <code>for</code> loops is that it handles incrementing the loop for us. We can specify the number of times we want the loop to run by instantiating a count variable (usually use 'i'). We then specify when to stop the loop by stating to run the loop until our increment condition is no longer met. And finally we state how we want the count to increase or decrease by.
+
+```
+// for loop
+
+// from i = 0, as long as i is less than 2, run the loop. Increment by increasing i by 1.
+for (i = 0; i < 2; i++) {
+    // do something
+}
+
+// real code example
+let oneToHundred = [];
+for (i = 1; i <= 100; i++) {
+    oneToHundred.push(i);
+}
+
+console.log(oneToHundred); // an array of 1 to 100
+```
+
+It is important to note that the for loop increments as soon as it hits the closing curly brace.
+
+### When to use which loop?:
+
+While loops are usually checking for a <strong>state</strong>. As long as this state is met, the following code will run.
+
+For a <code>for</code> loop, you would want to use this loop for <strong>iterate</strong> use cases. When you need to run a piece of code many, many times, then it would be more applicable to run that code with a for loop and specify how many times you want it run.
