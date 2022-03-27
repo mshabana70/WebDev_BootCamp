@@ -196,6 +196,50 @@ fizzBuzzFor();
 console.log(outputFor);
 
 
-// Fibonacci
-console.log("\n/********* For Loops *********/\n");
+// Fibonacci Sequence Code Challenge
+console.log("\n/********* Fibonacci Code Challenge *********/\n");
+
+// Replicate the fibonacci sequence using a function and loops
+// It runs the fibonacci sequence but only for the amount of integers
+// specified n.
+// Output is in the array format.
+// This version of the fibonacci sequence must run from 0, not 1.
+
+
+function fibonacciGenerator(n) {
+    // n - 2 ( 0 and 1 are predefined)
+    // (n = (n - 1) + (n - 2))
+    let sequence = [];
+
+    for (var j = 0; j < n; j++) {
+        if (j < 2) {
+            sequence.push(j);
+        } else {
+            sequence.push(sequence[(j - 1)] + sequence[(j - 2)]);
+        }
+    }
+
+    return sequence;
+}
+
+console.log(fibonacciGenerator(1));
+console.log(fibonacciGenerator(2));
+console.log(fibonacciGenerator(5));
+console.log(fibonacciGenerator(20));
+
+/** Another solution I liked
+ * let output = [];
+ * let fSum = -1;
+ * let sSum = 1;
+ * let sum = 0;
+ * 
+ * for (i = 0; i < n; i++) {
+ *  sum = fSum + sSum;
+ *  output.push(sum);
+ *  fSum = sSum;
+ *  sSum = sum;
+ * }
+ * 
+ * return output;
+ */
 
