@@ -37,12 +37,34 @@ if (guestList.includes(guestName)) {
 }
 
 // Messing with readline
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-readline.question("What is your name?", name =>{
-    console.log(`Hey there ${name}!`); // must use `` to use format in js
-    readline.close();
-})
+// readline.question("What is your name?", name =>{
+//     console.log(`Hey there ${name}!`); // must use `` to use format in js
+//     readline.close();
+// })
+
+// FizzBuzz Problem 
+
+console.log("\n/********* FizzBuzz Problem *********/\n");
+
+// My solution
+
+let outputArray = [];
+for (let i = 1; i <= 100; i++) {
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+        //console.log("FizzBuzz: " + i);
+        outputArray.push(["FizzBuzz: ", i]);
+    } else if (i % 3 == 0) {
+        //console.log("Fizz: " + i);
+        outputArray.push(["Fizz: ", i]);
+    } else if (i % 5 == 0) {
+        //console.log("Buzz: " + i);
+        outputArray.push(["Buzz: ", i]);
+    }
+}
+
+console.log(outputArray);
