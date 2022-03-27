@@ -539,3 +539,15 @@ console.log(multiArray[0]); // Output: "Mahmoud", 1
 console.log(multiArray[1][1]); // Output: 2
 console.log(multiArray[3][1][0]); // Output: Moon
 ```
+
+### Includes method
+
+The includes method returns a boolean value depending in if the passed parameter is included within the array. The array it targets is determined on the array it is called on.
+
+```
+const testArray = [1, 2, 3, 4, 5, 6];
+
+console.log(testArray.includes(2)); // Output: true;
+console.log(testArray.includes(6)); // Output: true;
+console.log(testArray.includes(8)); // Output: false;
+```
