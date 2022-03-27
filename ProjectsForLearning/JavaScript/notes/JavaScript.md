@@ -551,3 +551,12 @@ console.log(testArray.includes(2)); // Output: true;
 console.log(testArray.includes(6)); // Output: true;
 console.log(testArray.includes(8)); // Output: false;
 ```
+
+Note: There are many array methods out there. Make sure to visit [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) for more info.
+
+
+## Loops
+
+### While loops:
+
+
