@@ -97,6 +97,7 @@ for (let i = 1; i <= 100; i++) {
 console.log(output);
 
 // Code Challenge: Who's Buying Lunch?
+console.log("\n/********* Who's Buying Lunch Problem *********/\n");
 
 // Select a random name from an array of names.
 // This person will be in charge of buying lunch.
