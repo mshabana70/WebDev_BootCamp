@@ -488,10 +488,54 @@ if (number > 5) {
 
 ### Comparators
 
-There are three different ways to check for equality in JavaScript using the "=" sign. 
+There are three different ways to check for equality in JavaScript using the "=" sign.
 
 - "=": This assigns a value to a variable.
 - "==": This compares two values regardless of data types.
 - "===": this compares two values and their datatypes, both must be equal.
 
 There are also ">", "<", ">=", "<=", and "!=".
+
+## JavaScript Arrays
+
+### Collection of Data:
+
+Up until this point, we have been storing data types to variables to hold the memory of our data. But what if we want to store multiple pieces of data to one variable? This is where array's come into play. Arrays are a collection of data that can be of any data type and are related.
+
+```
+const myArray = [1, 2, 3, 4, 5]; // Array of numbers
+
+console.log(myArray); // Returns full array
+```
+
+When retreiving data from an array, you reference the index of the specific data you wish to retreive. Array indexes start from 0 and go to the length of the array - 1.
+
+```
+const myArray = [1, 2, 3, 4, 5];
+
+console.log(myArray[0]); // Output: 1
+console.log(myArray[3]); // Output: 4
+console.log(myArray[(myArray.length - 1)]); // Index = 5 - 1
+// Output: 5
+```
+
+### Multi Dimentional Array
+
+You can also store arrays with an array as a collection of arrays. This can be useful when you have collections of data that are all related to each other.
+
+```
+
+const multiArray = [["Mahmoud", 1], ["Elsayed", 2], ["Shabana", 3]];
+
+console.log(multiArray);
+```
+
+To index through a multi dimensional array, you would use multiple brackets. The first bracket indexes through the highest level array (the most external array). The second bracket indexes throught the second level of array, and so on.
+
+```
+const multiArray = [["Mahmoud", 1], ["Elsayed", 2], ["Shabana", 3], ["Other Aliases", ["Moon", 4]]];
+
+console.log(multiArray[0]); // Output: "Mahmoud", 1
+console.log(multiArray[1][1]); // Output: 2
+console.log(multiArray[3][1][0]); // Output: Moon
+```
