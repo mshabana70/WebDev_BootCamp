@@ -116,7 +116,7 @@ console.log(whosPaying(buyers));
 
 
 // LOOPS
-console.log("\n/********* Loops *********/\n");
+console.log("\n/********* While Loops *********/\n");
 
 // Lets refactor our fizzBuzz function using while loops
 let output2 = [];
@@ -143,4 +143,55 @@ function fizzBuzzWhile() {
 // Now we only need to run fizzBuzz once
 fizzBuzzWhile();
 console.log(output2);
+
+
+// Beer on the wall challenge
+
+// create a function the replicates the same 'bottles of beer on the wall'
+// using a while loop.
+
+let beers = 99;
+
+function beerOnTheWall() {
+    while (beers >= 0) {
+        if (beers != 0) {
+            console.log(`${beers} bottles of beer on the wall, ${beers} bottles of beer. Take 1 down, pass it around, ${(beers-1)} bottles of beer on the wall.\n`);
+        } else {
+            console.log(`No more bottles of beer on the wall, No more bottles of beer. Go to the store, buy some more, 99 bottles of beer on the wall.`);
+        }
+        beers--;
+    }
+}
+
+// Call the function
+beerOnTheWall();
+
+
+console.log("\n/********* For Loops *********/\n");
+
+// Lets refactor our fizzBuzz function using for loops
+
+let outputFor = [];
+
+function fizzBuzzFor() {
+
+    // Run code as long as i is less than or equal to 100
+    for (let i = 1; i <= 100; i++) {
+        if ((i % 3 == 0) && (i % 5 == 0)) {
+            //console.log("FizzBuzz: " + i);
+            outputFor.push(["FizzBuzz: ", i]);
+        } else if (i % 3 == 0) {
+            //console.log("Fizz: " + i);
+            outputFor.push(["Fizz: ", i]);
+        } else if (i % 5 == 0) {
+            //console.log("Buzz: " + i);
+            outputFor.push(["Buzz: ", i]);
+        }
+    }
+    //console.log(output);
+}
+
+// Now we only need to run fizzBuzz once
+fizzBuzzFor();
+console.log(outputFor);
 

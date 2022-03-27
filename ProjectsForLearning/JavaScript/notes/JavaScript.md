@@ -576,3 +576,9 @@ while (i < 2) {
     i++;
 } // will stop running when i is 2
 ```
+
+It is important to know that while loops are prone to errors. Simple mistakes with while loops can lead to something called an <strong>infinite loop</strong>. This means that the code will run infinitely because the condition of the while loop will never be met.
+
+### For Loops:
+
+Similar to while loops, for loops are a form of loops that execute code blocks until a condition is met. The benefit of <code>for</code> loops is that it handles incrementing the loop for us.
