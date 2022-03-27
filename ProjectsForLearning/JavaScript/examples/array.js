@@ -68,3 +68,30 @@ for (let i = 1; i <= 100; i++) {
 }
 
 console.log(outputArray);
+
+// Angela's Solution
+
+let output = [];
+var count = 1;
+
+function fizzBuzz() {
+    if ((count % 3 == 0) && (count % 5 == 0)) {
+        output.push("FizzBuzz");
+    } else if (count % 3 == 0) {
+        output.push("Fizz");
+    } else if (count % 5 == 0) {
+        output.push("Buzz");
+    } else {
+        output.push(count);
+    }  
+    count++;
+    //console.log(output);
+}
+
+// Call the function 100 times
+for (let i = 1; i <= 100; i++) {
+    fizzBuzz();
+}
+
+// Show array after it is populated
+console.log(output);
