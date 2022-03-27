@@ -113,3 +113,34 @@ function whosPaying(names) {
 
 console.log(whosPaying(buyers));
 console.log(whosPaying(buyers));
+
+
+// LOOPS
+console.log("\n/********* Loops *********/\n");
+
+// Lets refactor our fizzBuzz function using while loops
+let output2 = [];
+let count2 = 1;
+
+function fizzBuzzWhile() {
+
+    // Run code as long as count2 is less than or equal to 100
+    while (count2 <= 100) {
+        if ((count2 % 3 == 0) && (count2 % 5 == 0)) {
+            output2.push("FizzBuzz");
+        } else if (count2 % 3 == 0) {
+            output2.push("Fizz");
+        } else if (count2 % 5 == 0) {
+            output2.push("Buzz");
+        } else {
+            output2.push(count2);
+        }  
+        count2++;
+    }
+    //console.log(output);
+}
+
+// Now we only need to run fizzBuzz once
+fizzBuzzWhile();
+console.log(output2);
+

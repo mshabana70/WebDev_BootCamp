@@ -554,9 +554,25 @@ console.log(testArray.includes(8)); // Output: false;
 
 Note: There are many array methods out there. Make sure to visit [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) for more info.
 
-
 ## Loops
+
+Loops are used for iterating the execution of a code block as many times as we need. There are different types of loops to use, for example the <code>while</code> loop and <code>for</code> loop.
 
 ### While loops:
 
+The <code>while</code> loop executes a block of code for as long as the condition specified is met. Similar to an <code>if</code> statement, the expression that is specified next to the <code>while</code> keyword must be met for the execution to continue. Once the condition is not met, the while loop stops looping and the script continues on.
 
+```
+while (something  is true) [
+    // do something
+]
+
+// Real code example
+let i = 1;
+
+// While i is less than 2
+while (i < 2) {
+    console.log(i);
+    i++;
+} // will stop running when i is 2
+```
