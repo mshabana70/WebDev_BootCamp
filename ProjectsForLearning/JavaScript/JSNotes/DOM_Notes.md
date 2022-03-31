@@ -22,3 +22,7 @@ The relationships of the objects are mapped out by the tree diagram. There is a 
 <br>
 
 <blockquote>Note: the HTML tree is contained inside the Document object.</blockquote>
+
+## Selecting Elements with DOM
+
+### 
