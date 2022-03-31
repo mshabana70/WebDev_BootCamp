@@ -6,7 +6,7 @@
 
 Up until this point, most of website have been static. Whenever we open up our webpage, it is static content that is loaded into the browser. This limits how interactive the webpage is, allowing us not to really change parts of the webpage on the fly. In order to do this we need to incorporate javascript within our frontend.
 
-When a user interacts with our HTML content, we will need to respond to said interaction by returning new content or rearranging existing HTML content. This is where the <strong>Document Object Model</strong> come in. 
+When a user interacts with our HTML content, we will need to respond to said interaction by returning new content or rearranging existing HTML content. This is where the <strong>Document Object Model</strong> come in.
 
 The <strong>DOM</strong> breaks up or HTML content into objects we can select and manipulate with JavaScript code. Lets take a look at the diagram below for further clarification:
 <br>
@@ -16,5 +16,9 @@ On the left we have HTML tags that we would use to structure a webpage, on the r
 <br>
 <img src="./img/js-dom-tree.png" alt="JS DOM Tree Model">
 <br>
-The relationships of the objects are mapped out by the tree diagram.
+The relationships of the objects are mapped out by the tree diagram. There is a [chrome extension](https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg/related?hl=en-US) that generates the tree visualizer for us. This helps us see what the browser sees:
+<br>
+<img src="./img/html-tree-generator.png" alt="HTML Tree Generator">
+<br>
 
+<blockquote>Note: the HTML tree is contained inside the Document object.</blockquote>
