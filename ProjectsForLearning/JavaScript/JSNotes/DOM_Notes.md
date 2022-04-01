@@ -27,6 +27,18 @@ The relationships of the objects are mapped out by the tree diagram. There is a 
 
 Since all html elements are children of the document object (based on the tree diagram), than all we must do is call methods from the document object to gain access to its child object elements.
 
+### Getters
+
+You can simply return the values of the objects properties by executing code that selects object properties using dot notation.
+
+```
+
+// Get heading color
+var heading = document.querySelector("h1");
+heading.style.color; // returns the value of color (not to console but whatever you assign it to)
+
+```
+
 ### firstElementChild
 
 As the name hints, this method is used to return the first element child of whatever object you call it on. For example:
@@ -61,6 +73,11 @@ Instead of trying to map to the child of each object, you can use <code>querySel
 var checkbox = document.querySelector("input");
 checkbox.click(); // simulate user mouse click
 
+```
+
+<br>
+<blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
+
 ## Manipulating DOM elements
 
 Now that we are able to access and assign content to variables, we can manipulate such content through javascript.
@@ -85,6 +102,8 @@ You can also access attributes of html elements by calling on the objects proper
 // Change style of heading
 var heading = document.firstElementChild.lastElementChild.firstElementChild;
 heading.style.color = "blue";
+
+```
 
 ```
 
