@@ -28,3 +28,11 @@ console.log(document.firstElementChild.lastElementChild.firstElementChild);
 // Now lets try to manipulate the <h1> tag's content
 var heading = document.firstElementChild.lastElementChild.firstElementChild;
 heading.innerHTML = "Good Day from JS DOM"; // we change the contents using innerHTML
+
+// Style the heading as well
+heading.style.color = "blue";
+// Changes h1 to blue
+
+// You can also use querySelector to access elements by selector
+var checkbox = document.querySelector("input");
+checkbox.click();

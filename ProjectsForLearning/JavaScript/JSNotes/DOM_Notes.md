@@ -52,6 +52,15 @@ var body = document.lastElementChild
 
 ```
 
+### querySelector()
+
+Instead of trying to map to the child of each object, you can use <code>querySelector()</code> to access elements by passing in the selector name within the parameters:
+
+```
+// Access input elements
+var checkbox = document.querySelector("input");
+checkbox.click(); // simulate user mouse click
+
 ## Manipulating DOM elements
 
 Now that we are able to access and assign content to variables, we can manipulate such content through javascript.
@@ -76,5 +85,7 @@ You can also access attributes of html elements by calling on the objects proper
 // Change style of heading
 var heading = document.firstElementChild.lastElementChild.firstElementChild;
 heading.style.color = "blue";
+
+```
 
 ```
