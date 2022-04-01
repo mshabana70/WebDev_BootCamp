@@ -25,4 +25,56 @@ The relationships of the objects are mapped out by the tree diagram. There is a 
 
 ## Selecting Elements with DOM
 
-### 
+Since all html elements are children of the document object (based on the tree diagram), than all we must do is call methods from the document object to gain access to its child object elements.
+
+### firstElementChild
+
+As the name hints, this method is used to return the first element child of whatever object you call it on. For example:
+
+```
+
+// Access the <html> tags
+var html = document.firstElementChild;
+
+// Access the <head> tags
+var head = html.firstElementChild;
+
+```
+
+### lastElementChild
+
+Similar to the previous method, this method returns the last element child of whatever object it is called on.
+
+```
+
+// Access the <body> tags
+var body = document.lastElementChild
+
+```
+
+## Manipulating DOM elements
+
+Now that we are able to access and assign content to variables, we can manipulate such content through javascript.
+
+### innerHTML
+
+Using the <code>innerHTML</code> method, we can assign different values to the contents of HTML elements:
+
+```
+
+var heading = document.firstElementChild.lastElementChild.firstElementChild;
+heading.innerHTML = "Good Day from JS DOM"; // we change the contents using innerHTML
+
+```
+
+### Attributes
+
+You can also access attributes of html elements by calling on the objects properties, as you normally would in javascript:
+
+```
+
+// Change style of heading
+var heading = document.firstElementChild.lastElementChild.firstElementChild;
+heading.style.color = "blue";
+
+```
