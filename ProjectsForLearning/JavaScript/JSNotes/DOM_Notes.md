@@ -117,6 +117,4 @@ heading.style.color = "blue";
 
 ```
 
-```
 
-```
