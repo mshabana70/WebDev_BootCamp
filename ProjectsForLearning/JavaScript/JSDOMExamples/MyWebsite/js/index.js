@@ -36,3 +36,15 @@ heading.style.color = "blue";
 // You can also use querySelector to access elements by selector
 var checkbox = document.querySelector("input");
 checkbox.click();
+
+
+/* CODE CHALLENGE */
+
+/*
+    Select the third item in the unorder list and change the text of 
+    the <li> element using JS DOM Manipulation.
+*/
+
+var lastListElement = document.querySelector("ul").lastElementChild;
+console.log(lastListElement); // test that this is the right list element
+lastListElement.innerHTML = "Mahmoud Shabana";
