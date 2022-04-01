@@ -39,6 +39,18 @@ heading.style.color; // returns the value of color (not to console but whatever 
 
 ```
 
+### Setters
+
+You can simply set the values of the objects properties by executing code that selects object properties using dot notation and assigning a value to it.
+
+```
+
+// Get heading color
+var heading = document.querySelector("h1");
+heading.style.color = "red"; // sets the value of color properties (not to console but whatever you assign it to)
+
+```
+
 ### firstElementChild
 
 As the name hints, this method is used to return the first element child of whatever object you call it on. For example:
