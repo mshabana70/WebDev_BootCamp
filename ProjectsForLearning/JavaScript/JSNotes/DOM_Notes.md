@@ -86,6 +86,9 @@ var checkbox = document.querySelector("input");
 checkbox.click(); // simulate user mouse click
 
 ```
+<br>
+<blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
+
 
 ### getElementsByTagName():
 
@@ -106,8 +109,20 @@ heading[0].style.color = "blue";
 
 <blockquote>Important to note the plural use of 'Elements' word in the method. This mean the method is returning <strong>ALL</strong> instances of the parameter in array form.</blockquote>
 
-<br>
-<blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
+### getElementsByClassName():
+
+As the name suggests, you can select document object by their class name:
+
+```
+
+// Accessing H1 with class name 'title'
+var titleHeadings = document.getElementsByClassName("title");
+
+// Accessing buttom element with class name "btn"
+var btn = document.getElementsByClassName("btn");
+```
+
+<blockquote>Note: This method also returns an array datatype. Even if there is only one instance of this classname, it will still be returned in an array.</blockquote>
 
 ## Manipulating DOM elements
 
