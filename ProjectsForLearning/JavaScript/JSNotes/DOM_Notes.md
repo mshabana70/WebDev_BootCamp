@@ -100,9 +100,8 @@ var listItems = document.querySelector("#list .items");
 // returns array of all child elements of id 'list' with class name 'items'
 
 ```
-
 <br>
-<blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
+<blockquote>It is better to use these two methods for selecting HTML elements because you can control how broad or specific you wish to be when selecting.</blockquote>
 
 ### getElementsByTagName():
 
