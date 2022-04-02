@@ -86,9 +86,9 @@ var checkbox = document.querySelector("input");
 checkbox.click(); // simulate user mouse click
 
 ```
+
 <br>
 <blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
-
 
 ### getElementsByTagName():
 
@@ -123,6 +123,17 @@ var btn = document.getElementsByClassName("btn");
 ```
 
 <blockquote>Note: This method also returns an array datatype. Even if there is only one instance of this classname, it will still be returned in an array.</blockquote>
+
+### getElementById():
+
+This is similar to the previous methods of the 'getElementsBy...' family. But the key difference is that you are no longer getting multiple instances back, it will only return one instance of this ID name. The reason for this is because <code>id</code> names are unique and there should only be one of a kind in each document.
+
+```
+
+var ulList = document.getElementById("list");
+ulList.innerHTML = "Good Bye";
+
+```
 
 ## Manipulating DOM elements
 
