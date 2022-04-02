@@ -101,7 +101,7 @@ var heading = document.getElementByTagName('h1');
 
 heading[0].style.color = "blue";
 // styling the color of the first h1 element in the array
-
+// you can manipulate this array how you would normally
 ```
 
 <blockquote>Important to note the plural use of 'Elements' word in the method. This mean the method is returning <strong>ALL</strong> instances of the parameter in array form.</blockquote>
