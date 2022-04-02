@@ -99,6 +99,8 @@ var heading = document.getElementByTagName('h1');
 
 ```
 
+<blockquote>Important to note the plural use of 'Elements' word in the method. This mean the method is returning <strong>ALL</strong> instances of the parameter in array form.</blockquote>
+
 <br>
 <blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
 
