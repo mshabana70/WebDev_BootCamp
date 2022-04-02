@@ -67,3 +67,10 @@ secondHeader.innerHTML = "Changed using ID name";
 console.log(document.querySelector("#secondHeader")); // returns second h1
 console.log(document.querySelector("li a")); // returns a tag within li elements
 console.log(document.querySelector("li.item")); // returns li element with class name "item"
+
+// CODE CHALLENGE
+
+// Change the color of the embedded link in the first li element in the list
+var firstLink = document.querySelector(".list a");
+// console.log(firstLink); // check if it is the right link
+firstLink.style.color = "red";
