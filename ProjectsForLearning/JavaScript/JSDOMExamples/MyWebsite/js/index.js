@@ -48,3 +48,21 @@ checkbox.click();
 var lastListElement = document.querySelector("ul").lastElementChild;
 console.log(lastListElement); // test that this is the right list element
 lastListElement.innerHTML = "Mahmoud Shabana";
+
+// Get back elements by class name
+var listItems = document.getElementsByClassName("list");
+console.log(`returns array of our list elements:`);
+console.log(listItems);
+
+
+// Manipulating the second list item
+listItems[1].innerHTML = "Changed from JS File";
+
+// Get back elements by ID name
+var secondHeader = document.getElementById("secondHeader");
+secondHeader.innerHTML = "Changed using ID name";
+
+// You can get more specific with you selectors to get more specific elements
+// Use the same syntax as you would in CSS
+console.log(document.querySelector("#secondHeader")); // returns second h1
+
