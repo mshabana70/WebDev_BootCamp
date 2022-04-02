@@ -90,6 +90,20 @@ checkbox.click(); // simulate user mouse click
 <br>
 <blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
 
+### querySelectorAll():
+
+Similar to querySelector, where you can pass in hierarchal selectors (as you would use in CSS), this method returns all instances of the element. This is the plural version of querySelector() basically:
+
+```
+// Access input elements
+var listItems = document.querySelector("#list .items");
+// returns array of all child elements of id 'list' with class name 'items'
+
+```
+
+<br>
+<blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
+
 ### getElementsByTagName():
 
 This method, when acting on the document object, returns the elements that match the tag name that is passed in the parameters:
