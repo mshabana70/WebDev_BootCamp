@@ -76,7 +76,7 @@ var body = document.lastElementChild
 
 ```
 
-### querySelector()
+### querySelector():
 
 Instead of trying to map to the child of each object, you can use <code>querySelector()</code> to access elements by passing in the selector name within the parameters:
 
@@ -86,6 +86,12 @@ var checkbox = document.querySelector("input");
 checkbox.click(); // simulate user mouse click
 
 ```
+
+### getElementByTagName():
+
+
+
+
 
 <br>
 <blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
