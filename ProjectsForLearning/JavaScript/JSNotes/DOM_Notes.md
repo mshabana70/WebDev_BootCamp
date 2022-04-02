@@ -87,11 +87,17 @@ checkbox.click(); // simulate user mouse click
 
 ```
 
-### getElementByTagName():
+### getElementsByTagName():
 
+This method, when acting on the document object, returns the elements that match the tag name that is passed in the parameters:
 
+```
 
+// Accessing all h1 tags
+var heading = document.getElementByTagName('h1');
+// heading is an array of all h1 elements within the document objects
 
+```
 
 <br>
 <blockquote>Its important to remember that all content is represented as objects. These objects have properties and methods that we can interact with using <em>Dot Notation</em>.</blockquote>
@@ -122,5 +128,3 @@ var heading = document.firstElementChild.lastElementChild.firstElementChild;
 heading.style.color = "blue";
 
 ```
-
-
