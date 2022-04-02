@@ -65,4 +65,5 @@ secondHeader.innerHTML = "Changed using ID name";
 // You can get more specific with you selectors to get more specific elements
 // Use the same syntax as you would in CSS
 console.log(document.querySelector("#secondHeader")); // returns second h1
-
+console.log(document.querySelector("li a")); // returns a tag within li elements
+console.log(document.querySelector("li.item")); // returns li element with class name "item"
